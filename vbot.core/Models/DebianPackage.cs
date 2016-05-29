@@ -212,15 +212,16 @@ namespace vbot.core
                             break;
                         case JsonToken.EndObject:
                             top = stack.Peek();
-                            if (top.JsonType == "cve_list" || top.JsonType == "cve" || top.JsonType == "release" || top.JsonType == "release_list"
+                            if (top.JsonType == "cve" || top.JsonType == "release" || top.JsonType == "release_list"
                                 || top.JsonType == "repository" || top.JsonType == "repository_list")
                             {
                                 stack.Pop();
                                 //logger.Debug("Popped object {0} with name {1} from stack.", top.JsonType, top.Name);
                             }
-                            if (top.JsonType == "package")
+                            if (top.JsonType == "cve_list") 
                             {
-                                DebianPackage package = (DebianPackage) stack.Pop();
+                                stack.Pop();
+                                DebianPackage package = (DebianPackage) stack.Pop(); //cve list end means package end too
                                 logger.Info("Parsed {0} CVEs for package {1}.", package.CVEs.Count, package.Name);
                             }
                             break;
@@ -237,13 +238,29 @@ namespace vbot.core
             return (List<DebianPackage>) packages;
         }
 
-        public static OSSIndexVulnerability MapPackageToVulnerability(DebianPackage p)
+        public List<OSSIndexVulnerability> MapToOSSIndexVulnerabilities()
         {
-            return new OSSIndexVulnerability
+            List<OSSIndexVulnerability> v = new List<OSSIndexVulnerability>(this.CVEs.Count * this.CVEs.Sum(c => c.Releases.Count));
+            foreach(DebianPackage.CVE cve in this.CVEs)
             {
-                PackageManager = "dpkg",
-                
-            };
+                foreach(DebianPackage.Release release in cve.Releases)
+                {
+                    v.Add(new OSSIndexVulnerability
+                    {
+                        Action = "add+approve",
+                        PackageManager = "dpkg",
+                        Name = this.Name,
+                        Url = cve.DebianBug == 0 ?
+                            string.Format("https://bugs.debian.org/cgi-bin/bugreport.cgi?bug={0}#{1}", cve.DebianBug, release.Name) :
+                            string.Format("https://ossindex.net/dpkg/{0}/{1}/{2}", release.Name, this.Name, release.Name),
+                        Group = release.Name,
+                        Description = cve.Description,
+                        Version = release.FixedVersion,
+                        CVEs = new string[] {cve.Name},
+                    });
+                }
+            }
+            return v;
         }
 
     }

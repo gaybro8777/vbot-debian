@@ -31,7 +31,7 @@ namespace vbot.core
 
         public string ApiVersion { get; set; }
 
-        public Uri Url { get; set; }
+        public string Url { get; set; }
 
         public string User { get; set; }
 
@@ -44,14 +44,14 @@ namespace vbot.core
         public OSSIndexHttpClient(string api_version, string user, string password, string server_public_key = "")
         {
             this.ApiVersion = api_version;
-            this.Url = new Uri(string.Format("v{0}/vulnerability/new", this.ApiVersion));
+            this.Url = string.Format("/v{0}/vulnerability/new", this.ApiVersion);
             this.User = user;
             this.Password = password;
             this.ServerPublicKey = "";
             this.Credentials = Convert.ToBase64String(Encoding.ASCII.GetBytes(string.Format("{0}:{1}", this.User, this.Password)));
         }
 
-        public Task AddVulnerabilities(List<OSSIndexVulnerability> v)
+        public bool AddVulnerability(OSSIndexVulnerability v)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -65,7 +65,24 @@ namespace vbot.core
                     logger.Debug("Certificate details for host:\nIssuer: {0}\nSubject: {1}\nPublic key: {2}", certificate.Issuer, certificate.Subject, certificate.GetPublicKeyString());
                     return true;
                 };
+                HttpResponseMessage response = client.PostAsync(this.Url,
+                  new StringContent(JsonConvert.SerializeObject(v), Encoding.UTF8, "application/json")).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+                else
+                {
+                    logger.Info("Did not receive success status code from server. Server returned: {0}. Reason phrase: {1}", response.StatusCode, response.ReasonPhrase);
+                    return false;
+                }
             }
+
+           
+        }
+
+        public Task<bool> AddDebianPackageVulnerabilities(DebianPackage p)
+        {
             return null;
         }
         
