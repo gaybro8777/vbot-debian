@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vbot.core", "vbot.core\vbot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vbot.tests", "vbot.tests\vbot.tests.csproj", "{6C5ABEBA-2CF0-45C0-AAAD-40BF69CC161C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8C265D37-2510-44FE-85E4-E61F908CC3AE}"
+	ProjectSection(SolutionItems) = preProject
+		vbot.cmd = vbot.cmd
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

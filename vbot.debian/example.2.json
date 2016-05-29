@@ -1,0 +1,3988 @@
+{
+    "prototypejs": {
+        "CVE-2008-7220": {
+            "scope": "remote",
+            "debianbug": 555217,
+            "description": "Unspecified vulnerability in Prototype JavaScript framework (prototypejs) before 1.6.0.2 allows attackers to make \"cross-site ajax requests\" via unknown vectors.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7.1-3" },
+                    "urgency": "high**",
+                    "fixed_version": "1.6.0.2-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.7.1-3" },
+                    "urgency": "high**",
+                    "fixed_version": "1.6.0.2-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.7.0-2" },
+                    "urgency": "high**",
+                    "fixed_version": "1.6.0.2-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7.1-3" },
+                    "urgency": "high**",
+                    "fixed_version": "1.6.0.2-1"
+                }
+            }
+        },
+        "CVE-2007-2383": {
+            "scope": "remote",
+            "debianbug": 555217,
+            "description": "The Prototype (prototypejs) framework before 1.5.1 RC3 exchanges data using JavaScript Object Notation (JSON) without an associated protection scheme, which allows remote attackers to obtain the data via a web page that retrieves the data through a URL in the SRC attribute of a SCRIPT element and captures the data using other JavaScript code, aka \"JavaScript Hijacking.\"",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7.1-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.7.1-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.7.0-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7.1-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        }
+    },
+    "python-scipy": {
+        "CVE-2013-4251": {
+            "debianbug": 726093,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.17.0-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "0.12.0-3"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.14.0-2" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "0.12.0-3"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "nodsa": "Minor issue",
+                    "repositories": { "wheezy": "0.10.1+dfsg2-1" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.17.0-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "0.12.0-3"
+                }
+            }
+        }
+    },
+    "txt2man": {
+        "CVE-2013-1444": {
+            "scope": "local",
+            "debianbug": 724614,
+            "description": "A certain Debian patch for txt2man 1.5.5, as used in txt2man 1.5.5-2, 1.5.5-4, and others, allows local users to overwrite arbitrary files via a symlink attack on /tmp/2222.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.5.6-3" },
+                    "urgency": "low**",
+                    "fixed_version": "1.5.5-4.1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.5.5-4.1" },
+                    "urgency": "low**",
+                    "fixed_version": "1.5.5-4.1"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "nodsa": "Minor issue",
+                    "repositories": { "wheezy": "1.5.5-4" },
+                    "urgency": "low**"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.5.6-3" },
+                    "urgency": "low**",
+                    "fixed_version": "1.5.5-4.1"
+                }
+            }
+        }
+    },
+    "aegis": {
+        "CVE-2008-4938": {
+            "scope": "local",
+            "debianbug": 496400,
+            "description": "aegis 4.24 and aegis-web 4.24 allow local users to overwrite arbitrary files via a symlink attack on (a) /tmp/#####, (b) /tmp/#####.intro, (c) /tmp/aegis.#####.ae, (d) /tmp/aegis.#####, (e) /tmp/aegis.#####.1, (f) /tmp/aegis.#####.2, (g) /tmp/aegis.#####.log, and (h) /tmp/aegis.#####.out temporary files, related to the (1) bng_dvlpd.sh, (2) bng_rvwd.sh, (3) awt_dvlp.sh, (4) awt_intgrtn.sh, and (5) aegis.cgi scripts.",
+            "releases": {
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "4.24.3-3" },
+                    "urgency": "low",
+                    "fixed_version": "4.24-3.1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "4.24.3-3" },
+                    "urgency": "low",
+                    "fixed_version": "4.24-3.1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "4.24.3-3" },
+                    "urgency": "low",
+                    "fixed_version": "4.24-3.1"
+                }
+            }
+        }
+    },
+    "backupninja": {
+        "CVE-2005-3111": {
+            "scope": "local",
+            "description": "The handler code for backupninja 0.8 and earlier creates temporary files with predictable filenames, which allows local users to modify arbitrary files via a symlink attack.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.0.1-2" },
+                    "urgency": "medium",
+                    "fixed_version": "0.8-2"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.0.1-2" },
+                    "urgency": "medium",
+                    "fixed_version": "0.8-2"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.0.1-1" },
+                    "urgency": "medium",
+                    "fixed_version": "0.8-2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.0.1-2" },
+                    "urgency": "medium",
+                    "fixed_version": "0.8-2"
+                }
+            }
+        }
+    },
+    "rsyslog": {
+        "CVE-2011-3200": {
+            "scope": "remote",
+            "debianbug": 644611,
+            "description": "Stack-based buffer overflow in the parseLegacySyslogMsg function in tools/syslogd.c in rsyslogd in rsyslog 4.6.x before 4.6.8 and 5.2.0 through 5.8.4 might allow remote attackers to cause a denial of service (application exit) via a long TAG in a legacy syslog message.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "low",
+                    "fixed_version": "5.8.5-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "low",
+                    "fixed_version": "5.8.5-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "low",
+                    "fixed_version": "5.8.5-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "low",
+                    "fixed_version": "5.8.5-1"
+                }
+            }
+        },
+        "CVE-2014-3683": {
+            "scope": "remote",
+            "description": "Integer overflow in rsyslog before 7.6.7 and 8.x before 8.4.2 and sysklogd 1.5 and earlier allows remote attackers to cause a denial of service (crash) via a large priority (PRI) value.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-3634.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "8.4.2-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "medium**",
+                    "fixed_version": "8.4.2-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "5.8.11-3+deb7u2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "8.4.2-1"
+                }
+            }
+        },
+        "CVE-2014-3634": {
+            "scope": "remote",
+            "description": "rsyslog before 7.6.6 and 8.x before 8.4.1 and sysklogd 1.5 and earlier allows remote attackers to cause a denial of service (crash), possibly execute arbitrary code, or have other unspecified impact via a crafted priority (PRI) value that triggers an out-of-bounds array access.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "high**",
+                    "fixed_version": "8.4.1-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "high**",
+                    "fixed_version": "8.4.1-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "high**",
+                    "fixed_version": "5.8.11-3+deb7u1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "high**",
+                    "fixed_version": "8.4.1-1"
+                }
+            }
+        },
+        "CVE-2008-5617": {
+            "scope": "remote",
+            "debianbug": 508027,
+            "description": "The ACL handling in rsyslog 3.12.1 to 3.20.0, 4.1.0, and 4.1.1 does not follow $AllowedSender directive, which allows remote attackers to bypass intended access restrictions and spoof log messages or create a large number of spurious messages.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "high**",
+                    "fixed_version": "3.18.6-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "high**",
+                    "fixed_version": "3.18.6-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "high**",
+                    "fixed_version": "3.18.6-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "high**",
+                    "fixed_version": "3.18.6-1"
+                }
+            }
+        },
+        "CVE-2015-3243": {
+            "releases": {
+                "stretch": {
+                    "status": "open",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "unimportant"
+                },
+                "jessie": {
+                    "status": "open",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "unimportant"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "unimportant"
+                },
+                "sid": {
+                    "status": "open",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "unimportant"
+                }
+            }
+        },
+        "CVE-2011-4623": {
+            "scope": "local",
+            "description": "Integer overflow in the rsCStrExtendBuf function in runtime/stringbuf.c in the imfile module in rsyslog 4.x before 4.6.6, 5.x before 5.7.4, and 6.x before 6.1.4 allows local users to cause a denial of service (daemon hang) via a large file, which triggers a heap-based buffer overflow.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "low**",
+                    "fixed_version": "5.7.4-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "low**",
+                    "fixed_version": "5.7.4-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "low**",
+                    "fixed_version": "5.7.4-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "low**",
+                    "fixed_version": "5.7.4-1"
+                }
+            }
+        },
+        "CVE-2008-5618": {
+            "scope": "remote",
+            "debianbug": 510906,
+            "description": "imudp in rsyslog 4.x before 4.1.2, 3.21 before 3.21.9 beta, and 3.20 before 3.20.2 generates a message even when it is sent by an unauthorized sender, which allows remote attackers to cause a denial of service (disk consumption) via a large number of spurious messages.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "low",
+                    "fixed_version": "3.18.6-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "low",
+                    "fixed_version": "3.18.6-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "low",
+                    "fixed_version": "3.18.6-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "low",
+                    "fixed_version": "3.18.6-1"
+                }
+            }
+        },
+        "CVE-2013-4758": {
+            "scope": "remote",
+            "description": "Double free vulnerability in the writeDataError function in the ElasticSearch plugin (omelasticsearch) in rsyslog before 7.4.2 and before 7.5.2 devel, when errorfile is set to local logging, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a crafted JSON response.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2011-1490": {
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                }
+            }
+        },
+        "CVE-2011-1488": {
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                }
+            }
+        },
+        "CVE-2011-1489": {
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "8.16.0-1" },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "8.4.2-1+deb8u2" },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "5.8.11-3+deb7u2",
+                        "wheezy": "5.8.11-3+deb7u2"
+                    },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "8.16.0-1" },
+                    "urgency": "low",
+                    "fixed_version": "5.7.6-1"
+                }
+            }
+        }
+    },
+    "gcc-arm-none-eabi": {
+        "CVE-2016-4488": {
+            "releases": {
+                "stretch": {
+                    "status": "undetermined",
+                    "repositories": { "stretch": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                },
+                "jessie": {
+                    "status": "undetermined",
+                    "repositories": { "jessie": "11-1" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "undetermined",
+                    "repositories": { "sid": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        },
+        "CVE-2016-4489": {
+            "releases": {
+                "stretch": {
+                    "status": "undetermined",
+                    "repositories": { "stretch": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                },
+                "jessie": {
+                    "status": "undetermined",
+                    "repositories": { "jessie": "11-1" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "undetermined",
+                    "repositories": { "sid": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        },
+        "CVE-2016-4487": {
+            "releases": {
+                "stretch": {
+                    "status": "undetermined",
+                    "repositories": { "stretch": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                },
+                "jessie": {
+                    "status": "undetermined",
+                    "repositories": { "jessie": "11-1" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "undetermined",
+                    "repositories": { "sid": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        },
+        "CVE-2016-2226": {
+            "releases": {
+                "stretch": {
+                    "status": "undetermined",
+                    "repositories": { "stretch": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                },
+                "jessie": {
+                    "status": "undetermined",
+                    "repositories": { "jessie": "11-1" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "undetermined",
+                    "repositories": { "sid": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        },
+        "CVE-2016-4491": {
+            "releases": {
+                "stretch": {
+                    "status": "undetermined",
+                    "repositories": { "stretch": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                },
+                "jessie": {
+                    "status": "undetermined",
+                    "repositories": { "jessie": "11-1" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "undetermined",
+                    "repositories": { "sid": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        },
+        "CVE-2016-4490": {
+            "releases": {
+                "stretch": {
+                    "status": "undetermined",
+                    "repositories": { "stretch": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                },
+                "jessie": {
+                    "status": "undetermined",
+                    "repositories": { "jessie": "11-1" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "undetermined",
+                    "repositories": { "sid": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        },
+        "CVE-2016-4493": {
+            "releases": {
+                "stretch": {
+                    "status": "undetermined",
+                    "repositories": { "stretch": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                },
+                "jessie": {
+                    "status": "undetermined",
+                    "repositories": { "jessie": "11-1" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "undetermined",
+                    "repositories": { "sid": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        },
+        "CVE-2016-4492": {
+            "releases": {
+                "stretch": {
+                    "status": "undetermined",
+                    "repositories": { "stretch": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                },
+                "jessie": {
+                    "status": "undetermined",
+                    "repositories": { "jessie": "11-1" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "undetermined",
+                    "repositories": { "sid": "15:4.9.3+svn231177-1" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        }
+    },
+    "libjpeg6b": {
+        "CVE-2013-6630": {
+            "scope": "remote",
+            "debianbug": 729867,
+            "description": "The get_dht function in jdmarker.c in libjpeg-turbo through 1.3.0, as used in Google Chrome before 31.0.1650.48 and other products, does not set all elements of a certain Huffman value array during the reading of segments that follow Define Huffman Table (DHT) JPEG markers, which allows remote attackers to obtain sensitive information from uninitialized memory locations via a crafted JPEG image.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "6b1-3+deb7u1" },
+                    "urgency": "medium**",
+                    "fixed_version": "6b1-3+deb7u1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:6b2-2" },
+                    "urgency": "low",
+                    "fixed_version": "6b1-4"
+                }
+            }
+        },
+        "CVE-2016-3616": {
+            "debianbug": 819969,
+            "releases": {
+                "wheezy": {
+                    "status": "open",
+                    "repositories": { "wheezy": "6b1-3+deb7u1" },
+                    "urgency": "unimportant"
+                },
+                "sid": {
+                    "status": "open",
+                    "repositories": { "sid": "1:6b2-2" },
+                    "urgency": "unimportant"
+                }
+            }
+        },
+        "CVE-2006-3005": {
+            "scope": "remote",
+            "debianbug": 373672,
+            "description": "The JPEG library in media-libs/jpeg before 6b-r7 on Gentoo Linux is built without the -maxmem feature, which could allow context-dependent attackers to cause a denial of service (memory exhaustion) via a crafted JPEG file that exceeds the intended memory limits.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "6b1-3+deb7u1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:6b2-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2013-6629": {
+            "scope": "remote",
+            "debianbug": 729867,
+            "description": "The get_sos function in jdmarker.c in (1) libjpeg 6b and (2) libjpeg-turbo through 1.3.0, as used in Google Chrome before 31.0.1650.48, Ghostscript, and other products, does not check for certain duplications of component data during the reading of segments that follow Start Of Scan (SOS) JPEG markers, which allows remote attackers to obtain sensitive information from uninitialized memory locations via a crafted JPEG image.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "6b1-3+deb7u1" },
+                    "urgency": "medium**",
+                    "fixed_version": "6b1-3+deb7u1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:6b2-2" },
+                    "urgency": "low",
+                    "fixed_version": "6b1-4"
+                }
+            }
+        },
+        "TEMP-0340079-E5FD8C": {
+            "debianbug": 340079,
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "6b1-3+deb7u1" },
+                    "urgency": "low",
+                    "fixed_version": "6b-11"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:6b2-2" },
+                    "urgency": "low",
+                    "fixed_version": "6b-11"
+                }
+            }
+        }
+    },
+    "crypt++el": {
+        "TEMP-0105562-0FE13B": {
+            "debianbug": 105562,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.94-1" },
+                    "urgency": "low",
+                    "fixed_version": "2.91-2.1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.94-1" },
+                    "urgency": "low",
+                    "fixed_version": "2.91-2.1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2.94-1" },
+                    "urgency": "low",
+                    "fixed_version": "2.91-2.1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.94-1" },
+                    "urgency": "low",
+                    "fixed_version": "2.91-2.1"
+                }
+            }
+        }
+    },
+    "sogo": {
+        "CVE-2015-5395": {
+            "debianbug": 796197,
+            "releases": {
+                "jessie": {
+                    "status": "open",
+                    "repositories": { "jessie": "2.2.9+git20141017-1" },
+                    "urgency": "not yet assigned"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "repositories": { "wheezy": "1.3.16-1" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "open",
+                    "repositories": { "sid": "2.2.17a-1.1" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        }
+    },
+    "ruby-actionpack-3.2": {
+        "CVE-2013-0155": {
+            "scope": "remote",
+            "debianbug": 697744,
+            "description": "Ruby on Rails 3.0.x before 3.0.19, 3.1.x before 3.1.10, and 3.2.x before 3.2.11 does not properly consider differences in parameter handling between the Active Record component and the JSON implementation, which allows remote attackers to bypass intended database-query restrictions and perform NULL checks or trigger missing WHERE clauses via a crafted request, as demonstrated by certain \"[nil]\" values, a related issue to CVE-2012-2660 and CVE-2012-2694.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-5"
+                }
+            }
+        },
+        "CVE-2015-7576": {
+            "scope": "remote",
+            "description": "The http_basic_authenticate_with method in actionpack/lib/action_controller/metal/http_authentication.rb in the Basic Authentication implementation in Action Controller in Ruby on Rails before 3.2.22.1, 4.0.x and 4.1.x before 4.1.14.1, 4.2.x before 4.2.5.1, and 5.x before 5.0.0.beta1.1 does not use a constant-time algorithm for verifying credentials, which makes it easier for remote attackers to bypass authentication by measuring timing differences.",
+            "releases": {
+                "wheezy": {
+                    "status": "open",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**"
+                }
+            }
+        },
+        "CVE-2016-2097": {
+            "scope": "remote",
+            "description": "Directory traversal vulnerability in Action View in Ruby on Rails before 3.2.22.2 and 4.x before 4.1.14.2 allows remote attackers to read arbitrary files by leveraging an application's unrestricted use of the render method and providing a .. (dot dot) in a pathname.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2016-0752.",
+            "releases": {
+                "wheezy": {
+                    "status": "open",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**"
+                }
+            }
+        },
+        "CVE-2016-2098": {
+            "scope": "remote",
+            "description": "Action Pack in Ruby on Rails before 3.2.22.2, 4.x before 4.1.14.2, and 4.2.x before 4.2.5.2 allows remote attackers to execute arbitrary Ruby code by leveraging an application's unrestricted use of the render method.",
+            "releases": {
+                "wheezy": {
+                    "status": "open",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "high**"
+                }
+            }
+        },
+        "CVE-2016-0752": {
+            "scope": "remote",
+            "description": "Directory traversal vulnerability in Action View in Ruby on Rails before 3.2.22.1, 4.0.x and 4.1.x before 4.1.14.1, 4.2.x before 4.2.5.1, and 5.x before 5.0.0.beta1.1 allows remote attackers to read arbitrary files by leveraging an application's unrestricted use of the render method and providing a .. (dot dot) in a pathname.",
+            "releases": {
+                "wheezy": {
+                    "status": "open",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**"
+                }
+            }
+        },
+        "CVE-2016-0751": {
+            "scope": "remote",
+            "description": "actionpack/lib/action_dispatch/http/mime_type.rb in Action Pack in Ruby on Rails before 3.2.22.1, 4.0.x and 4.1.x before 4.1.14.1, 4.2.x before 4.2.5.1, and 5.x before 5.0.0.beta1.1 does not properly restrict use of the MIME type cache, which allows remote attackers to cause a denial of service (memory consumption) via a crafted HTTP Accept header.",
+            "releases": {
+                "wheezy": {
+                    "status": "open",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**"
+                }
+            }
+        },
+        "CVE-2014-0081": {
+            "scope": "remote",
+            "description": "Multiple cross-site scripting (XSS) vulnerabilities in actionview/lib/action_view/helpers/number_helper.rb in Ruby on Rails before 3.2.17, 4.0.x before 4.0.3, and 4.1.x before 4.1.0.beta2 allow remote attackers to inject arbitrary web script or HTML via the (1) format, (2) negative_format, or (3) units parameter to the (a) number_to_currency, (b) number_to_percentage, or (c) number_to_human helper.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-6+deb7u2"
+                }
+            }
+        },
+        "CVE-2012-3463": {
+            "scope": "remote",
+            "debianbug": 684454,
+            "description": "Cross-site scripting (XSS) vulnerability in actionpack/lib/action_view/helpers/form_tag_helper.rb in Ruby on Rails 3.x before 3.0.17, 3.1.x before 3.1.8, and 3.2.x before 3.2.8 allows remote attackers to inject arbitrary web script or HTML via the prompt field to the select_tag helper.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-4"
+                }
+            }
+        },
+        "CVE-2012-3465": {
+            "scope": "remote",
+            "debianbug": 684454,
+            "description": "Cross-site scripting (XSS) vulnerability in actionpack/lib/action_view/helpers/sanitize_helper.rb in the strip_tags helper in Ruby on Rails before 3.0.17, 3.1.x before 3.1.8, and 3.2.x before 3.2.8 allows remote attackers to inject arbitrary web script or HTML via malformed HTML markup.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-4"
+                }
+            }
+        },
+        "CVE-2012-3464": {
+            "scope": "remote",
+            "debianbug": 684454,
+            "description": "Cross-site scripting (XSS) vulnerability in activesupport/lib/active_support/core_ext/string/output_safety.rb in Ruby on Rails before 3.0.17, 3.1.x before 3.1.8, and 3.2.x before 3.2.8 might allow remote attackers to inject arbitrary web script or HTML via vectors involving a ' (quote) character.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-4"
+                }
+            }
+        },
+        "CVE-2012-3424": {
+            "scope": "remote",
+            "debianbug": 683370,
+            "description": "The decode_credentials method in actionpack/lib/action_controller/metal/http_authentication.rb in Ruby on Rails 3.x before 3.0.16, 3.1.x before 3.1.7, and 3.2.x before 3.2.7 converts Digest Authentication strings to symbols, which allows remote attackers to cause a denial of service by leveraging access to an application that uses a with_http_digest helper method, as demonstrated by the authenticate_or_request_with_http_digest method.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-3"
+                }
+            }
+        },
+        "CVE-2013-6416": {
+            "scope": "remote",
+            "debianbug": 731290,
+            "description": "Cross-site scripting (XSS) vulnerability in the simple_format helper in actionpack/lib/action_view/helpers/text_helper.rb in Ruby on Rails 4.x before 4.0.2 allows remote attackers to inject arbitrary web script or HTML via a crafted HTML attribute.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2013-6414": {
+            "scope": "remote",
+            "debianbug": 731288,
+            "description": "actionpack/lib/action_view/lookup_context.rb in Action View in Ruby on Rails 3.x before 3.2.16 and 4.x before 4.0.2 allows remote attackers to cause a denial of service (memory consumption) via a header containing an invalid MIME type that leads to excessive caching.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-6+deb7u1"
+                }
+            }
+        },
+        "CVE-2013-6415": {
+            "scope": "remote",
+            "debianbug": 731288,
+            "description": "Cross-site scripting (XSS) vulnerability in the number_to_currency helper in actionpack/lib/action_view/helpers/number_helper.rb in Ruby on Rails before 3.2.16 and 4.x before 4.0.2 allows remote attackers to inject arbitrary web script or HTML via the unit parameter.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-6+deb7u1"
+                }
+            }
+        },
+        "CVE-2014-7829": {
+            "scope": "remote",
+            "debianbug": 770934,
+            "description": "Directory traversal vulnerability in actionpack/lib/action_dispatch/middleware/static.rb in Action Pack in Ruby on Rails 3.x before 3.2.21, 4.0.x before 4.0.12, 4.1.x before 4.1.8, and 4.2.x before 4.2.0.beta4, when serve_static_assets is enabled, allows remote attackers to determine the existence of files outside the application root via vectors involving a \\ (backslash) character, a similar issue to CVE-2014-7818.",
+            "releases": {
+                "wheezy": {
+                    "status": "open",
+                    "nodsa": "Minor issue",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**"
+                }
+            }
+        },
+        "CVE-2013-6417": {
+            "scope": "remote",
+            "debianbug": 731288,
+            "description": "actionpack/lib/action_dispatch/http/request.rb in Ruby on Rails before 3.2.16 and 4.x before 4.0.2 does not properly consider differences in parameter handling between the Active Record component and the JSON implementation, which allows remote attackers to bypass intended database-query restrictions and perform NULL checks or trigger missing WHERE clauses via a crafted request that leverages (1) third-party Rack middleware or (2) custom Rack middleware.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2013-0155.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-6+deb7u1"
+                }
+            }
+        },
+        "CVE-2013-1855": {
+            "scope": "remote",
+            "debianbug": 703349,
+            "description": "The sanitize_css method in lib/action_controller/vendor/html-scanner/html/sanitizer.rb in the Action Pack component in Ruby on Rails before 2.3.18, 3.0.x and 3.1.x before 3.1.12, and 3.2.x before 3.2.13 does not properly handle \\n (newline) characters, which makes it easier for remote attackers to conduct cross-site scripting (XSS) attacks via crafted Cascading Style Sheets (CSS) token sequences.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-6"
+                }
+            }
+        },
+        "CVE-2013-1857": {
+            "scope": "remote",
+            "debianbug": 703349,
+            "description": "The sanitize helper in lib/action_controller/vendor/html-scanner/html/sanitizer.rb in the Action Pack component in Ruby on Rails before 2.3.18, 3.0.x and 3.1.x before 3.1.12, and 3.2.x before 3.2.13 does not properly handle encoded : (colon) characters in URLs, which makes it easier for remote attackers to conduct cross-site scripting (XSS) attacks via a crafted scheme name, as demonstrated by including a &#x3a; sequence.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-6"
+                }
+            }
+        },
+        "CVE-2013-4389": {
+            "scope": "remote",
+            "debianbug": 726576,
+            "description": "Multiple format string vulnerabilities in log_subscriber.rb files in the log subscriber component in Action Mailer in Ruby on Rails 3.x before 3.2.15 allow remote attackers to cause a denial of service via a crafted e-mail address that is improperly handled during construction of a log message.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-6+deb7u1"
+                }
+            }
+        },
+        "CVE-2014-0082": {
+            "scope": "remote",
+            "description": "actionpack/lib/action_view/template/text.rb in Action View in Ruby on Rails 3.x before 3.2.17 converts MIME type strings to symbols during use of the :text option to the render method, which allows remote attackers to cause a denial of service (memory consumption) by including these strings in headers.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-6+deb7u2"
+                }
+            }
+        },
+        "CVE-2013-4491": {
+            "scope": "remote",
+            "debianbug": 731288,
+            "description": "Cross-site scripting (XSS) vulnerability in actionpack/lib/action_view/helpers/translation_helper.rb in the internationalization component in Ruby on Rails 3.x before 3.2.16 and 4.x before 4.0.2 allows remote attackers to inject arbitrary web script or HTML via a crafted string that triggers generation of a fallback string by the i18n gem.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-6+deb7u1"
+                }
+            }
+        },
+        "CVE-2015-7581": {
+            "scope": "remote",
+            "description": "actionpack/lib/action_dispatch/routing/route_set.rb in Action Pack in Ruby on Rails 4.x before 4.2.5.1 and 5.x before 5.0.0.beta1.1 allows remote attackers to cause a denial of service (superfluous caching and memory consumption) by leveraging an application's use of a wildcard controller route.",
+            "releases": {
+                "wheezy": {
+                    "status": "open",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**"
+                }
+            }
+        },
+        "CVE-2014-7818": {
+            "scope": "remote",
+            "debianbug": 770934,
+            "description": "Directory traversal vulnerability in actionpack/lib/action_dispatch/middleware/static.rb in Action Pack in Ruby on Rails 3.x before 3.2.20, 4.0.x before 4.0.11, 4.1.x before 4.1.7, and 4.2.x before 4.2.0.beta3, when serve_static_assets is enabled, allows remote attackers to determine the existence of files outside the application root via a /..%2F sequence.",
+            "releases": {
+                "wheezy": {
+                    "status": "open",
+                    "nodsa": "Minor issue",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**"
+                }
+            }
+        },
+        "CVE-2014-0130": {
+            "scope": "remote",
+            "debianbug": 747380,
+            "description": "Directory traversal vulnerability in actionpack/lib/abstract_controller/base.rb in the implicit-render implementation in Ruby on Rails before 3.2.18, 4.0.x before 4.0.5, and 4.1.x before 4.1.1, when certain route globbing configurations are enabled, allows remote attackers to read arbitrary files via a crafted request.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.2.6-6+deb7u2",
+                        "wheezy": "3.2.6-6+deb7u2"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.2.6-6+deb7u2"
+                }
+            }
+        }
+    },
+    "heimdal": {
+        "CVE-2002-1235": {
+            "scope": "remote",
+            "description": "The kadm_ser_in function in (1) the Kerberos v4compatibility administration daemon (kadmind4) in the MIT Kerberos 5 (krb5) krb5-1.2.6 and earlier, (2) kadmind in KTH Kerberos 4 (eBones) before 1.2.1, and (3) kadmind in KTH Kerberos 5 (Heimdal) before 0.5.1 when compiled with Kerberos 4 support, does not properly verify the length field of a request, which allows remote attackers to execute arbitrary code via a buffer overflow attack.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-22"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-22"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-22"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-22"
+                }
+            }
+        },
+        "CVE-2011-4862": {
+            "scope": "remote",
+            "debianbug": 654231,
+            "description": "Buffer overflow in libtelnet/encrypt.c in telnetd in FreeBSD 7.3 through 9.0, MIT Kerberos Version 5 Applications (aka krb5-appl) 1.0.2 and earlier, Heimdal 1.5.1 and earlier, GNU inetutils, and possibly other products allows remote attackers to execute arbitrary code via a long encryption key, as exploited in the wild in December 2011.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "high",
+                    "fixed_version": "1.5.dfsg.1-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "high",
+                    "fixed_version": "1.5.dfsg.1-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "high",
+                    "fixed_version": "1.5.dfsg.1-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "high",
+                    "fixed_version": "1.5.dfsg.1-1"
+                }
+            }
+        },
+        "CVE-2002-1225": {
+            "scope": "remote",
+            "description": "Multiple buffer overflows in Heimdal before 0.5, possibly in both the (1) kadmind and (2) kdc servers, may allow remote attackers to gain root access.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-21"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-21"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-21"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-21"
+                }
+            }
+        },
+        "CVE-2002-1226": {
+            "scope": "remote",
+            "description": "Unknown vulnerabilities in Heimdal before 0.5 with unknown impact, possibly in the (1) kadmind and (2) kdc servers, may allow remote or local attackers to gain root or other access, but not via buffer overflows (CVE-2002-1225).",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-21"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-21"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-21"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.4e-21"
+                }
+            }
+        },
+        "CVE-2004-0434": {
+            "scope": "remote",
+            "description": "k5admind (kadmind) for Heimdal allows remote attackers to execute arbitrary code via a Kerberos 4 compatibility administration request whose framing length is less than 2, which leads to a heap-based buffer overflow.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "high**",
+                    "fixed_version": "0.6.2-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "high**",
+                    "fixed_version": "0.6.2-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "high**",
+                    "fixed_version": "0.6.2-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.6.2-1"
+                }
+            }
+        },
+        "CVE-2003-0138": {
+            "scope": "remote",
+            "description": "Version 4 of the Kerberos protocol (krb4), as used in Heimdal and other packages, allows an attacker to impersonate any principal in a realm via a chosen-plaintext attack.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "high**",
+                    "fixed_version": "0.5.2-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "high**",
+                    "fixed_version": "0.5.2-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "high**",
+                    "fixed_version": "0.5.2-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.5.2-1"
+                }
+            }
+        },
+        "CVE-2004-0371": {
+            "scope": "remote",
+            "description": "Heimdal 0.6.x before 0.6.1 and 0.5.x before 0.5.3 does not properly perform certain consistency checks for cross-realm requests, which allows remote attackers with control of a realm to impersonate others in the cross-realm trust path.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.6.1-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.6.1-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.6.1-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.6.1-1"
+                }
+            }
+        },
+        "CVE-2006-0677": {
+            "scope": "remote",
+            "description": "telnetd in Heimdal 0.6.x before 0.6.6 and 0.7.x before 0.7.2 allows remote unauthenticated attackers to cause a denial of service (server crash) via unknown vectors that trigger a null dereference.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "high**",
+                    "fixed_version": "0.7.2-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "high**",
+                    "fixed_version": "0.7.2-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "high**",
+                    "fixed_version": "0.7.2-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.7.2-1"
+                }
+            }
+        },
+        "CVE-2010-1321": {
+            "scope": "remote",
+            "debianbug": 582261,
+            "description": "The kg_accept_krb5 function in krb5/accept_sec_context.c in the GSS-API library in MIT Kerberos 5 (aka krb5) through 1.7.1 and 1.8 before 1.8.2, as used in kadmind and other applications, does not properly check for invalid GSS-API tokens, which allows remote authenticated users to cause a denial of service (NULL pointer dereference and daemon crash) via an AP-REQ message in which the authenticator's checksum field is missing.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.4.0~git20100605.dfsg.1-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.4.0~git20100605.dfsg.1-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.4.0~git20100605.dfsg.1-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.4.0~git20100605.dfsg.1-1"
+                }
+            }
+        },
+        "CVE-2005-0469": {
+            "scope": "remote",
+            "debianbug": 302036,
+            "description": "Buffer overflow in the slc_add_reply function in various BSD-based Telnet clients, when handling LINEMODE suboptions, allows remote attackers to execute arbitrary code via a reply with a large number of Set Local Character (SLC) commands.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "high**",
+                    "fixed_version": "0.6.3-10"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "high**",
+                    "fixed_version": "0.6.3-10"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "high**",
+                    "fixed_version": "0.6.3-10"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.6.3-10"
+                }
+            }
+        },
+        "CVE-2007-5939": {
+            "scope": "remote",
+            "description": "The gss_userok function in appl/ftp/ftpd/gss_userok.c in Heimdal 0.7.2 does not allocate memory for the ticketfile pointer before calling free, which allows remote attackers to have an unknown impact via an invalid username.  NOTE: the vulnerability was originally reported for ftpd.c, but this is incorrect.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2005-2040": {
+            "scope": "remote",
+            "debianbug": 315065,
+            "description": "Multiple buffer overflows in the getterminaltype function in telnetd for Heimdal before 0.6.5 may allow remote attackers to execute arbitrary code, a different vulnerability than CVE-2005-0468 and CVE-2005-0469.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "high",
+                    "fixed_version": "0.6.3-11"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "high",
+                    "fixed_version": "0.6.3-11"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "high",
+                    "fixed_version": "0.6.3-11"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "high",
+                    "fixed_version": "0.6.3-11"
+                }
+            }
+        },
+        "CVE-2006-0582": {
+            "scope": "local",
+            "description": "Unspecified vulnerability in rshd in Heimdal 0.6.x before 0.6.6 and 0.7.x before 0.7.2, when storing forwarded credentials, allows attackers to overwrite arbitrary files and change file ownership via unknown vectors.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7~git20150920+dfsg-4" },
+                    "urgency": "low**",
+                    "fixed_version": "0.7.2-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6~rc2+dfsg-9" },
+                    "urgency": "low**",
+                    "fixed_version": "0.7.2-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6~git20120403+dfsg1-2" },
+                    "urgency": "low**",
+                    "fixed_version": "0.7.2-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7~git20160515+dfsg-1" },
+                    "urgency": "low**",
+                    "fixed_version": "0.7.2-1"
+                }
+            }
+        }
+    },
+    "liece": {
+        "CVE-2003-0537": {
+            "scope": "local",
+            "description": "The liece Emacs IRC client 2.0+0.20030527 and earlier creates temporary files insecurely, which could allow local users to overwrite arbitrary files as other users.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.0+0.20030527cvs-11.2" },
+                    "urgency": "medium**",
+                    "fixed_version": "2.0+0.20030527cvs-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.0+0.20030527cvs-11.2" },
+                    "urgency": "medium**",
+                    "fixed_version": "2.0+0.20030527cvs-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2.0+0.20030527cvs-11" },
+                    "urgency": "medium**",
+                    "fixed_version": "2.0+0.20030527cvs-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.0+0.20030527cvs-11.2" },
+                    "urgency": "medium**",
+                    "fixed_version": "2.0+0.20030527cvs-1"
+                }
+            }
+        }
+    },
+    "dropbear": {
+        "CVE-2007-1099": {
+            "scope": "remote",
+            "debianbug": 412899,
+            "description": "dbclient in Dropbear SSH client before 0.49 does not sufficiently warn the user when it detects a hostkey mismatch, which might allow remote attackers to conduct man-in-the-middle attacks.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2016.73-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0.49-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2014.65-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0.49-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2012.55-1.3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0.49-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2016.73-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0.49-1"
+                }
+            }
+        },
+        "CVE-2004-2486": {
+            "scope": "remote",
+            "description": "The DSS verification code in Dropbear SSH Server before 0.43 frees uninitialized variables, which might allow remote attackers to gain access.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2016.73-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.43-2"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2014.65-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.43-2"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2012.55-1.3" },
+                    "urgency": "high**",
+                    "fixed_version": "0.43-2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2016.73-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.43-2"
+                }
+            }
+        },
+        "CVE-2013-4434": {
+            "scope": "remote",
+            "debianbug": 726118,
+            "description": "Dropbear SSH Server before 2013.59 generates error messages for a failed logon attempt with different time delays depending on whether the user account exists, which allows remote attackers to discover valid usernames.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2016.73-1" },
+                    "urgency": "low",
+                    "fixed_version": "2012.55-1.4"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2014.65-1" },
+                    "urgency": "low",
+                    "fixed_version": "2012.55-1.4"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "nodsa": "Minor issue",
+                    "repositories": { "wheezy": "2012.55-1.3" },
+                    "urgency": "low"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2016.73-1" },
+                    "urgency": "low",
+                    "fixed_version": "2012.55-1.4"
+                }
+            }
+        },
+        "CVE-2013-4421": {
+            "scope": "remote",
+            "debianbug": 726019,
+            "description": "The buf_decompress function in packet.c in Dropbear SSH Server before 2013.59 allows remote attackers to cause a denial of service (memory consumption) via a compressed packet that has a large size when it is decompressed.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2016.73-1" },
+                    "urgency": "low",
+                    "fixed_version": "2012.55-1.4"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2014.65-1" },
+                    "urgency": "low",
+                    "fixed_version": "2012.55-1.4"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "nodsa": "Minor issue",
+                    "repositories": { "wheezy": "2012.55-1.3" },
+                    "urgency": "low"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2016.73-1" },
+                    "urgency": "low",
+                    "fixed_version": "2012.55-1.4"
+                }
+            }
+        },
+        "CVE-2006-0225": {
+            "scope": "local",
+            "debianbug": 349645,
+            "description": "scp in OpenSSH 4.2p1 allows attackers to execute arbitrary commands via filenames that contain shell metacharacters or spaces, which are expanded twice.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2016.73-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0.48-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2014.65-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0.48-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2012.55-1.3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0.48-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2016.73-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0.48-1"
+                }
+            }
+        },
+        "CVE-2006-1206": {
+            "scope": "remote",
+            "description": "Matt Johnston Dropbear SSH server 0.47 and earlier, as used in embedded Linux devices and on general-purpose operating systems, allows remote attackers to cause a denial of service (connection slot exhaustion) via a large number of connection attempts that exceeds the MAX_UNAUTH_CLIENTS defined value of 30.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2016.73-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.48-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2014.65-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.48-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2012.55-1.3" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.48-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2016.73-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.48-1"
+                }
+            }
+        },
+        "CVE-2005-4178": {
+            "scope": "remote",
+            "description": "Buffer overflow in Dropbear server before 0.47 allows authenticated users to execute arbitrary code via unspecified inputs that cause insufficient memory to be allocated due to an incorrect expression that does not enforce the proper order of operations.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2016.73-1" },
+                    "urgency": "high",
+                    "fixed_version": "0.47-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2014.65-1" },
+                    "urgency": "high",
+                    "fixed_version": "0.47-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2012.55-1.3" },
+                    "urgency": "high",
+                    "fixed_version": "0.47-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2016.73-1" },
+                    "urgency": "high",
+                    "fixed_version": "0.47-1"
+                }
+            }
+        },
+        "CVE-2012-0920": {
+            "scope": "remote",
+            "debianbug": 661150,
+            "description": "Use-after-free vulnerability in Dropbear SSH Server 0.52 through 2012.54, when command restriction and public key authentication are enabled, allows remote authenticated users to execute arbitrary code and bypass command restrictions via multiple crafted command requests, related to \"channels concurrency.\"",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2016.73-1" },
+                    "urgency": "low",
+                    "fixed_version": "2012.55-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2014.65-1" },
+                    "urgency": "low",
+                    "fixed_version": "2012.55-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2012.55-1.3" },
+                    "urgency": "low",
+                    "fixed_version": "2012.55-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2016.73-1" },
+                    "urgency": "low",
+                    "fixed_version": "2012.55-1"
+                }
+            }
+        },
+        "CVE-2016-3116": {
+            "scope": "remote",
+            "description": "CRLF injection vulnerability in Dropbear SSH before 2016.72 allows remote authenticated users to bypass intended shell-command restrictions via crafted X11 forwarding data.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2016.73-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "2016.72-1"
+                },
+                "jessie": {
+                    "status": "open",
+                    "nodsa": "Minor issue",
+                    "repositories": { "jessie": "2014.65-1" },
+                    "urgency": "medium**"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "nodsa": "Minor issue",
+                    "repositories": { "wheezy": "2012.55-1.3" },
+                    "urgency": "medium**"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2016.73-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "2016.72-1"
+                }
+            }
+        }
+    },
+    "openmpi": {
+        "CVE-2009-3736": {
+            "scope": "local",
+            "debianbug": 559797,
+            "description": "ltdl.c in libltdl in GNU Libtool 1.5.x, and 2.2.6 before 2.2.6b, as used in Ham Radio Control Libraries, Q, and possibly other products, attempts to open a .la file in the current working directory, which allows local users to gain privileges via a Trojan horse file.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.10.2-12" },
+                    "urgency": "low",
+                    "fixed_version": "1.3.3-4"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6.5-9.1" },
+                    "urgency": "low",
+                    "fixed_version": "1.3.3-4"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.4.5-1" },
+                    "urgency": "low",
+                    "fixed_version": "1.3.3-4"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.10.2-12" },
+                    "urgency": "low",
+                    "fixed_version": "1.3.3-4"
+                }
+            }
+        }
+    },
+    "mod-auth-mysql": {
+        "CVE-2008-2384": {
+            "scope": "remote",
+            "description": "SQL injection vulnerability in mod_auth_mysql.c in the mod-auth-mysql (aka libapache2-mod-auth-mysql) module for the Apache HTTP Server 2.x, when configured to use a multibyte character set that allows a \\ (backslash) as part of the character encoding, allows remote attackers to execute arbitrary SQL commands via unspecified inputs in a login request.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "4.3.9-13.1" },
+                    "urgency": "medium",
+                    "fixed_version": "4.3.9-11"
+                }
+            }
+        }
+    },
+    "trousers": {
+        "CVE-2012-0698": {
+            "scope": "remote",
+            "debianbug": 692649,
+            "description": "tcsd in TrouSerS before 0.3.10 allows remote attackers to cause a denial of service (daemon crash) via a crafted type_offset value in a TCP packet to port 30003.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.3.13-4" },
+                    "urgency": "low",
+                    "fixed_version": "0.3.9-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.3.13-3" },
+                    "urgency": "low",
+                    "fixed_version": "0.3.9-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "0.3.9-3+wheezy1" },
+                    "urgency": "low",
+                    "fixed_version": "0.3.9-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.3.13-4" },
+                    "urgency": "low",
+                    "fixed_version": "0.3.9-1"
+                }
+            }
+        }
+    },
+    "libphp-snoopy": {
+        "CVE-2014-5009": {
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.0.0-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.0.0-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "2.0.0-1~deb7u1",
+                        "wheezy": "2.0.0-1~deb7u1"
+                    },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.0.0-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2008-4796": {
+            "scope": "remote",
+            "debianbug": 504168,
+            "description": "The _httpsrequest function (Snoopy/Snoopy.class.php) in Snoopy 1.2.3 and earlier, as used in (1) ampache, (2) libphp-snoopy, (3) mahara, (4) mediamate, (5) opendb, (6) pixelpost, and possibly other products, allows remote attackers to execute arbitrary commands via shell metacharacters in https URLs.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.0.0-1" },
+                    "urgency": "medium",
+                    "fixed_version": "1.2.4-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.0.0-1" },
+                    "urgency": "medium",
+                    "fixed_version": "1.2.4-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "2.0.0-1~deb7u1",
+                        "wheezy": "2.0.0-1~deb7u1"
+                    },
+                    "urgency": "medium",
+                    "fixed_version": "1.2.4-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.0.0-1" },
+                    "urgency": "medium",
+                    "fixed_version": "1.2.4-1"
+                }
+            }
+        },
+        "CVE-2014-5008": {
+            "debianbug": 778634,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.0.0-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "2.0.0-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.0.0-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "2.0.0-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "2.0.0-1~deb7u1",
+                        "wheezy": "2.0.0-1~deb7u1"
+                    },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "2.0.0-1~deb7u1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.0.0-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "2.0.0-1"
+                }
+            }
+        },
+        "CVE-2002-2444": {
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.0.0-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.0.0-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "2.0.0-1~deb7u1",
+                        "wheezy": "2.0.0-1~deb7u1"
+                    },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.0.0-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2008-7313": {
+            "debianbug": 778634,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.0.0-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "2.0.0-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.0.0-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "2.0.0-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "2.0.0-1~deb7u1",
+                        "wheezy": "2.0.0-1~deb7u1"
+                    },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "2.0.0-1~deb7u1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.0.0-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "2.0.0-1"
+                }
+            }
+        }
+    },
+    "wicd": {
+        "CVE-2012-0813": {
+            "scope": "local",
+            "debianbug": 652417,
+            "description": "Wicd before 1.7.1 saves sensitive information in log files in /var/log/wicd, which allows context-dependent attackers to obtain passwords and other sensitive information.",
+            "releases": {
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.7.2.4-4.1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "1.7.1~b3-4"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.7.2.4-4" },
+                    "urgency": "unimportant",
+                    "fixed_version": "1.7.1~b3-4"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7.4+tb2-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "1.7.1~b3-4"
+                }
+            }
+        },
+        "TEMP-0582798-329FE7": {
+            "debianbug": 582798,
+            "releases": {
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.7.2.4-4.1" },
+                    "urgency": "low",
+                    "fixed_version": "1.7.0+ds1-3"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.7.2.4-4" },
+                    "urgency": "low",
+                    "fixed_version": "1.7.0+ds1-3"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7.4+tb2-1" },
+                    "urgency": "low",
+                    "fixed_version": "1.7.0+ds1-3"
+                }
+            }
+        },
+        "CVE-2012-2095": {
+            "scope": "local",
+            "debianbug": 668397,
+            "description": "The SetWiredProperty function in the D-Bus interface in WICD before 1.7.2 allows local users to write arbitrary configuration settings and gain privileges via a crafted property name in a dbus message.",
+            "releases": {
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.7.2.4-4.1" },
+                    "urgency": "low",
+                    "fixed_version": "1.7.2.4-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.7.2.4-4" },
+                    "urgency": "low",
+                    "fixed_version": "1.7.2.4-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7.4+tb2-1" },
+                    "urgency": "low",
+                    "fixed_version": "1.7.2.4-1"
+                }
+            }
+        },
+        "CVE-2009-0489": {
+            "scope": "local",
+            "description": "The DBus configuration file for Wicd before 1.5.9 allows arbitrary users to own org.wicd.daemon, which allows local users to receive messages that were intended for the Wicd daemon, possibly including credentials.",
+            "releases": {
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.7.2.4-4.1" },
+                    "urgency": "low**",
+                    "fixed_version": "1.5.9-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.7.2.4-4" },
+                    "urgency": "low**",
+                    "fixed_version": "1.5.9-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7.4+tb2-1" },
+                    "urgency": "low**",
+                    "fixed_version": "1.5.9-1"
+                }
+            }
+        }
+    },
+    "coccinelle": {
+        "CVE-2009-1753": {
+            "scope": "local",
+            "description": "Coccinelle 0.1.7 allows local users to overwrite arbitrary files via a symlink attack on an unspecified \"result file.\"",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.0.4.deb-2" },
+                    "urgency": "low",
+                    "fixed_version": "0.1.7.deb-3"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.0.0~rc22.deb-1" },
+                    "urgency": "low",
+                    "fixed_version": "0.1.7.deb-3"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.0.0~rc12.deb-5" },
+                    "urgency": "low",
+                    "fixed_version": "0.1.7.deb-3"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.0.4.deb-2" },
+                    "urgency": "low",
+                    "fixed_version": "0.1.7.deb-3"
+                }
+            }
+        }
+    },
+    "gbatnav": {
+        "CVE-2003-0407": {
+            "scope": "remote",
+            "description": "Buffer overflow in gbnserver for Gnome Batalla Naval 1.0.4 allows remote attackers to execute arbitrary code via a long connection string.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.0.4cvs20051004-5" },
+                    "urgency": "high**",
+                    "fixed_version": "1.0.4-4"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.0.4cvs20051004-5" },
+                    "urgency": "high**",
+                    "fixed_version": "1.0.4-4"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.0.4cvs20051004-5" },
+                    "urgency": "high**",
+                    "fixed_version": "1.0.4-4"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.0.4cvs20051004-5" },
+                    "urgency": "high**",
+                    "fixed_version": "1.0.4-4"
+                }
+            }
+        }
+    },
+    "unrar-free": {
+        "TEMP-0000000-DEED53": {
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1:0.0.1+cvs20140707-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:0.0.1-2"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1:0.0.1+cvs20140707-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:0.0.1-2"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1:0.0.1+cvs20071127-2" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:0.0.1-2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:0.0.1+cvs20140707-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:0.0.1-2"
+                }
+            }
+        }
+    },
+    "netqmail": {
+        "CVE-2011-1431": {
+            "scope": "remote",
+            "debianbug": 652378,
+            "description": "The STARTTLS implementation in qmail-smtpd.c in qmail-smtpd in the netqmail-1.06-tls patch for netqmail 1.06 does not properly restrict I/O buffering, which allows man-in-the-middle attackers to insert commands into encrypted SMTP sessions by sending a cleartext command that is processed after TLS is in place, related to a \"plaintext command injection\" attack, a similar issue to CVE-2011-0411.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.06-5" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.06-5" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.06-5" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.06-5" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        }
+    },
+    "cgmanager": {
+        "CVE-2014-1425": {
+            "scope": "local",
+            "description": "cmanager 0.32 does not properly enforce nesting when modifying cgroup properties, which allows local users to set cgroup values for all cgroups via unspecified vectors.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.41-2" },
+                    "urgency": "low**",
+                    "fixed_version": "0.33-3"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.33-2+deb8u2" },
+                    "urgency": "low**",
+                    "fixed_version": "0.33-2+deb8u1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.41-2" },
+                    "urgency": "low**",
+                    "fixed_version": "0.33-3"
+                }
+            }
+        }
+    },
+    "webauth": {
+        "CVE-2009-2945": {
+            "scope": "remote",
+            "description": "weblogin/login.fcgi (aka the WebLogin login script) in Stanford University WebAuth 3.5.5, 3.6.0, and 3.6.1 places passwords in URLs in certain circumstances involving conversion of a POST request to a GET request, which allows context-dependent attackers to discover passwords by reading (1) web-server access logs, (2) web-server Referer logs, or (3) the browser history.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "4.7.0-3" },
+                    "urgency": "low",
+                    "fixed_version": "3.6.2-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "4.6.1-1" },
+                    "urgency": "low",
+                    "fixed_version": "3.6.2-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "4.1.1-2" },
+                    "urgency": "low",
+                    "fixed_version": "3.6.2-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "4.7.0-3" },
+                    "urgency": "low",
+                    "fixed_version": "3.6.2-1"
+                }
+            }
+        },
+        "TEMP-0000000-75B37A": {
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "4.7.0-3" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "3.5.2-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "4.6.1-1" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "3.5.2-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "4.1.1-2" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "3.5.2-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "4.7.0-3" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "3.5.2-1"
+                }
+            }
+        },
+        "CVE-2013-2106": {
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "4.7.0-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "4.6.1-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "4.1.1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "4.7.0-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        }
+    },
+    "ruby-i18n": {
+        "CVE-2013-4492": {
+            "scope": "remote",
+            "description": "Cross-site scripting (XSS) vulnerability in exceptions.rb in the i18n gem before 0.6.6 for Ruby allows remote attackers to inject arbitrary web script or HTML via a crafted I18n::MissingTranslationData.new call.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.7.0-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.6.9-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.6.9-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.6.9-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "0.6.0-3+deb7u1",
+                        "wheezy": "0.6.0-3+deb7u1"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "0.6.0-3+deb7u1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.7.0-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.6.9-1"
+                }
+            }
+        }
+    },
+    "zoneminder": {
+        "CVE-2013-0332": {
+            "scope": "remote",
+            "debianbug": 700912,
+            "description": "Multiple directory traversal vulnerabilities in ZoneMinder 1.24.x before 1.24.4 allow remote attackers to read arbitrary files via a .. (dot dot) in the (1) view, (2) request, or (3) action parameter.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.29.0+dfsg-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.25.0-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.25.0-4" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.25.0-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.29.0+dfsg-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.25.0-1"
+                }
+            }
+        },
+        "CVE-2004-0227": {
+            "scope": "remote",
+            "description": "Buffer overflow in the zms script in ZoneMinder before 1.19.2 may allow a remote attacker to execute arbitrary code via a long query string.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.29.0+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "1.22.3-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.25.0-4" },
+                    "urgency": "high**",
+                    "fixed_version": "1.22.3-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.29.0+dfsg-2" },
+                    "urgency": "high**",
+                    "fixed_version": "1.22.3-1"
+                }
+            }
+        },
+        "CVE-2008-3880": {
+            "scope": "remote",
+            "debianbug": 497640,
+            "description": "SQL injection vulnerability in zm_html_view_event.php in ZoneMinder 1.23.3 and earlier allows remote attackers to execute arbitrary SQL commands via the filter array parameter.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.29.0+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "1.24.1-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.25.0-4" },
+                    "urgency": "high**",
+                    "fixed_version": "1.24.1-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.29.0+dfsg-2" },
+                    "urgency": "high**",
+                    "fixed_version": "1.24.1-1"
+                }
+            }
+        },
+        "CVE-2008-3881": {
+            "scope": "remote",
+            "debianbug": 497640,
+            "description": "Multiple cross-site scripting (XSS) vulnerabilities in ZoneMinder 1.23.3 and earlier allow remote attackers to inject arbitrary web script or HTML via unspecified \"zm_html_view_*.php\" files.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.29.0+dfsg-1" },
+                    "urgency": "low",
+                    "fixed_version": "1.24.1-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.25.0-4" },
+                    "urgency": "low",
+                    "fixed_version": "1.24.1-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.29.0+dfsg-2" },
+                    "urgency": "low",
+                    "fixed_version": "1.24.1-1"
+                }
+            }
+        },
+        "CVE-2008-3882": {
+            "scope": "remote",
+            "debianbug": 497640,
+            "description": "Unspecified \"Command Injection\" vulnerability in ZoneMinder 1.23.3 and earlier allows remote attackers to execute arbitrary commands via (1) the executeFilter function in zm_html_view_events.php and (2) the run_state parameter to zm_html_view_state.php.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.29.0+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "1.24.1-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.25.0-4" },
+                    "urgency": "high**",
+                    "fixed_version": "1.24.1-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.29.0+dfsg-2" },
+                    "urgency": "high**",
+                    "fixed_version": "1.24.1-1"
+                }
+            }
+        },
+        "CVE-2013-0232": {
+            "scope": "remote",
+            "debianbug": 698910,
+            "description": "includes/functions.php in ZoneMinder Video Server 1.24.0, 1.25.0, and earlier allows remote attackers to execute arbitrary commands via shell metacharacters in the (1) runState parameter in the packageControl function; or (2) key or (3) command parameter in the setDeviceStatusX10 function.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.29.0+dfsg-1" },
+                    "urgency": "high**",
+                    "fixed_version": "1.25.0-4"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.25.0-4" },
+                    "urgency": "high**",
+                    "fixed_version": "1.25.0-4"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.29.0+dfsg-2" },
+                    "urgency": "high**",
+                    "fixed_version": "1.25.0-4"
+                }
+            }
+        },
+        "CVE-2008-1381": {
+            "scope": "remote",
+            "debianbug": 479034,
+            "description": "ZoneMinder before 1.23.3 allows remote authenticated users, and possibly unauthenticated attackers in some installations, to execute arbitrary commands via shell metacharacters in a crafted URL.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.29.0+dfsg-1" },
+                    "urgency": "medium",
+                    "fixed_version": "1.23.3-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.25.0-4" },
+                    "urgency": "medium",
+                    "fixed_version": "1.23.3-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.29.0+dfsg-2" },
+                    "urgency": "medium",
+                    "fixed_version": "1.23.3-1"
+                }
+            }
+        },
+        "CVE-2008-6756": {
+            "scope": "local",
+            "description": "ZoneMinder 1.23.3 on Gentoo Linux uses 0644 permissions for /etc/zm.conf, which allows local users to obtain the database username and password by reading this file.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.29.0+dfsg-1" },
+                    "urgency": "low**",
+                    "fixed_version": "1.22.3-5"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.25.0-4" },
+                    "urgency": "low**",
+                    "fixed_version": "1.22.3-5"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.29.0+dfsg-2" },
+                    "urgency": "low**",
+                    "fixed_version": "1.22.3-5"
+                }
+            }
+        },
+        "CVE-2008-6755": {
+            "scope": "remote",
+            "debianbug": 528252,
+            "description": "ZoneMinder 1.23.3 on Fedora 10 sets the ownership of /etc/zm.conf to the apache user account, and sets the permissions to 0600, which makes it easier for remote attackers to modify this file by accessing it through a (1) PHP or (2) CGI script.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.29.0+dfsg-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "1.24.1-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.25.0-4" },
+                    "urgency": "unimportant",
+                    "fixed_version": "1.24.1-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.29.0+dfsg-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "1.24.1-1"
+                }
+            }
+        }
+    },
+    "alpine": {
+        "CVE-2005-1066": {
+            "scope": "local",
+            "description": "Race condition in rpdump in Pine 4.62 and earlier allows local users to overwrite arbitrary files via a symlink attack.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.11+dfsg1-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2.02+dfsg-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2015-2305": {
+            "scope": "remote",
+            "debianbug": 778389,
+            "description": "Integer overflow in the regcomp implementation in the Henry Spencer BSD regex library (aka rxspencer) alpha3.8.g5 on 32-bit platforms, as used in NetBSD through 6.1.5 and other products, might allow context-dependent attackers to execute arbitrary code via a large regular expression that leads to a heap-based buffer overflow.",
+            "releases": {
+                "stretch": {
+                    "status": "open",
+                    "repositories": { "stretch": "2.20+dfsg1-2" },
+                    "urgency": "unimportant"
+                },
+                "jessie": {
+                    "status": "open",
+                    "repositories": { "jessie": "2.11+dfsg1-3" },
+                    "urgency": "unimportant"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "repositories": { "wheezy": "2.02+dfsg-2" },
+                    "urgency": "unimportant"
+                },
+                "sid": {
+                    "status": "open",
+                    "repositories": { "sid": "2.20+dfsg1-2" },
+                    "urgency": "unimportant"
+                }
+            }
+        },
+        "CVE-2008-5005": {
+            "scope": "remote",
+            "description": "Multiple stack-based buffer overflows in (1) University of Washington IMAP Toolkit 2002 through 2007c, (2) University of Washington Alpine 2.00 and earlier, and (3) Panda IMAP allow (a) local users to gain privileges by specifying a long folder extension argument on the command line to the tmail or dmail program; and (b) remote attackers to execute arbitrary code by sending e-mail to a destination mailbox name composed of a username and '+' character followed by a long string, processed by the tmail or possibly dmail program.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.11+dfsg1-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2.02+dfsg-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2002-1903": {
+            "scope": "remote",
+            "description": "Pine 4.2.1 through 4.4.4 puts Unix usernames and/or uid into Sender: and X-Sender: headers, which could allow remote attackers to obtain sensitive information.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.11+dfsg1-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2.02+dfsg-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2008-5514": {
+            "scope": "remote",
+            "debianbug": 510918,
+            "description": "Off-by-one error in the rfc822_output_char function in the RFC822BUFFER routines in the University of Washington (UW) c-client library, as used by the UW IMAP toolkit before imap-2007e and other applications, allows context-dependent attackers to cause a denial of service (crash) via an e-mail message that triggers a buffer overflow.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.20+dfsg1-2" },
+                    "urgency": "low",
+                    "fixed_version": "2.02-3.1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.11+dfsg1-3" },
+                    "urgency": "low",
+                    "fixed_version": "2.02-3.1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2.02+dfsg-2" },
+                    "urgency": "low",
+                    "fixed_version": "2.02-3.1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.20+dfsg1-2" },
+                    "urgency": "low",
+                    "fixed_version": "2.02-3.1"
+                }
+            }
+        },
+        "CVE-2003-0720": {
+            "scope": "remote",
+            "description": "Buffer overflow in PINE before 4.58 allows remote attackers to execute arbitrary code via a malformed message/external-body MIME type.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.11+dfsg1-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2.02+dfsg-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2003-0721": {
+            "scope": "remote",
+            "description": "Integer signedness error in rfc2231_get_param from strings.c in PINE before 4.58 allows remote attackers to execute arbitrary code via an email that causes an out-of-bounds array access using a negative number.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.11+dfsg1-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2.02+dfsg-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2003-0297": {
+            "scope": "remote",
+            "description": "c-client IMAP Client, as used in imap-2002b and Pine 4.53, allows remote malicious IMAP servers to cause a denial of service (crash) and possibly execute arbitrary code via certain large (1) literal and (2) mailbox size values that cause either integer signedness errors or integer overflow errors.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.11+dfsg1-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2.02+dfsg-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2005-2933": {
+            "scope": "remote",
+            "debianbug": 332215,
+            "description": "Buffer overflow in the mail_valid_net_parse_work function in mail.c for Washington's IMAP Server (UW-IMAP) before imap-2004g allows remote attackers to execute arbitrary code via a mailbox name containing a single double-quote (\") character without a closing quote, which causes bytes after the double-quote to be copied into a buffer indefinitely.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "2.11+dfsg1-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "2.02+dfsg-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "2.20+dfsg1-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        }
+    },
+    "linux-ftpd": {
+        "CVE-2008-4247": {
+            "scope": "remote",
+            "debianbug": 500278,
+            "description": "ftpd in OpenBSD 4.3, FreeBSD 7.0, NetBSD 4.0, Solaris, and possibly other operating systems interprets long commands from an FTP client as multiple commands, which allows remote attackers to conduct cross-site request forgery (CSRF) attacks and execute arbitrary FTP commands via a long ftp:// URI that leverages an existing session from the FTP client implementation in a web browser.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.17-35" },
+                    "urgency": "high**",
+                    "fixed_version": "0.17-29"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.17-34" },
+                    "urgency": "high**",
+                    "fixed_version": "0.17-29"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "0.17-34" },
+                    "urgency": "high**",
+                    "fixed_version": "0.17-29"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.17-35" },
+                    "urgency": "high**",
+                    "fixed_version": "0.17-29"
+                }
+            }
+        },
+        "CVE-2006-6008": {
+            "scope": "remote",
+            "description": "ftpd in Linux Netkit (linux-ftpd) 0.17, and possibly other versions, does not check the return status of certain seteuid, setgid, and setuid calls, which might allow remote authenticated users to gain privileges if these calls fail in cases such as PAM failures or resource limits, a different vulnerability than CVE-2006-5778.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.17-35" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.17-23"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.17-34" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.17-23"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "0.17-34" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.17-23"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.17-35" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.17-23"
+                }
+            }
+        },
+        "TEMP-0000000-106DD8": {
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.17-35" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.17-34" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "0.17-34" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.17-35" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2006-7094": {
+            "scope": "remote",
+            "debianbug": 384454,
+            "description": "ftpd, as used by Gentoo and Debian Linux, sets the gid to the effective uid instead of the effective group id before executing /bin/ls, which allows remote authenticated users to list arbitrary directories with the privileges of gid 0 and possibly enable additional attack vectors.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.17-35" },
+                    "urgency": "low",
+                    "fixed_version": "0.17-23"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.17-34" },
+                    "urgency": "low",
+                    "fixed_version": "0.17-23"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "0.17-34" },
+                    "urgency": "low",
+                    "fixed_version": "0.17-23"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.17-35" },
+                    "urgency": "low",
+                    "fixed_version": "0.17-23"
+                }
+            }
+        },
+        "CVE-2006-5778": {
+            "scope": "local",
+            "debianbug": 384454,
+            "description": "ftpd in linux-ftpd 0.17, and possibly other versions, performs a chdir before setting the UID, which allows local users to bypass intended access restrictions by redirecting their home directory to a restricted directory.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.17-35" },
+                    "urgency": "low",
+                    "fixed_version": "0.17-23"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.17-34" },
+                    "urgency": "low",
+                    "fixed_version": "0.17-23"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "0.17-34" },
+                    "urgency": "low",
+                    "fixed_version": "0.17-23"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.17-35" },
+                    "urgency": "low",
+                    "fixed_version": "0.17-23"
+                }
+            }
+        }
+    },
+    "django-tastypie": {
+        "CVE-2011-4104": {
+            "scope": "remote",
+            "debianbug": 647314,
+            "description": "The from_yaml method in serializers.py in Django Tastypie before 0.9.10 does not properly deserialize YAML data, which allows remote attackers to execute arbitrary Python code via vectors related to the yaml.load method.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.12.0-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.9.10-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.12.0-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.9.10-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "0.9.10-2" },
+                    "urgency": "high**",
+                    "fixed_version": "0.9.10-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.12.0-1" },
+                    "urgency": "high**",
+                    "fixed_version": "0.9.10-1"
+                }
+            }
+        }
+    },
+    "async-http-client": {
+        "CVE-2013-7397": {
+            "scope": "remote",
+            "description": "Async Http Client (aka AHC or async-http-client) before 1.9.0 skips X.509 certificate verification unless both a keyStore location and a trustStore location are explicitly set, which allows man-in-the-middle attackers to spoof HTTPS servers by presenting an arbitrary certificate during use of a typical AHC configuration, as demonstrated by a configuration that does not send client certificates.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.6.5-4" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.6.5-3"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6.5-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.6.5-3"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "nodsa": "Minor issue",
+                    "repositories": { "wheezy": "1.6.5-1" },
+                    "urgency": "medium**"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.6.5-4" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.6.5-3"
+                }
+            }
+        },
+        "CVE-2013-7398": {
+            "scope": "remote",
+            "description": "main/java/com/ning/http/client/AsyncHttpClientConfig.java in Async Http Client (aka AHC or async-http-client) before 1.9.0 does not require a hostname match during verification of X.509 certificates, which allows man-in-the-middle attackers to spoof HTTPS servers via an arbitrary valid certificate.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.6.5-4" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.6.5-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.6.5-1" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.6.5-4" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        }
+    },
+    "leafnode": {
+        "CVE-2002-1661": {
+            "scope": "remote",
+            "description": "The leafnode server in leafnode 1.9.20 to 1.9.29 allows remote attackers to cause a denial of service (infinite loop) when leafnode requests a cross-posted article to one group whose name is a prefix of another group.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.11.10-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.11.10-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.11.8-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.11.10-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2005-1911": {
+            "scope": "remote",
+            "debianbug": 338886,
+            "description": "The fetchnews NNTP client in leafnode 1.11.2 and earlier can hang while waiting for input that never arrives, which allows remote NNTP servers to cause a denial of service (news loss).",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.11.10-3" },
+                    "urgency": "low",
+                    "fixed_version": "1.11.3.rel-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.11.10-2" },
+                    "urgency": "low",
+                    "fixed_version": "1.11.3.rel-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.11.8-3" },
+                    "urgency": "low",
+                    "fixed_version": "1.11.3.rel-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.11.10-3" },
+                    "urgency": "low",
+                    "fixed_version": "1.11.3.rel-1"
+                }
+            }
+        },
+        "CVE-2003-0744": {
+            "scope": "remote",
+            "description": "The fetchnews NNTP client in leafnode 1.9.3 to 1.9.41 allows remote attackers to cause a denial of service (process hang and termination) via certain malformed Usenet news articles that cause fetchnews to hang while waiting for input.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.11.10-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.9.42"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.11.10-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.9.42"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.11.8-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.9.42"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.11.10-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.9.42"
+                }
+            }
+        },
+        "CVE-2004-2068": {
+            "scope": "remote",
+            "description": "fetchnews in leafnode 1.9.47 and earlier allows remote attackers to cause a denial of service (process hang) via an emptry NNTP news article with missing mandatory headers.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.11.10-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.11.10-2" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.11.8-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.11.10-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        },
+        "CVE-2005-1453": {
+            "scope": "remote",
+            "description": "fetchnews in leafnode 1.9.48 to 1.11.1 allows remote NNTP servers to cause a denial of service (crash) by closing the connection while fetchnews is reading (1) an article header or (2) an article body, which also prevents fetchnews from querying other servers.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.11.10-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.11.2.rel-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.11.10-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.11.2.rel-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.11.8-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.11.2.rel-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.11.10-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "1.11.2.rel-1"
+                }
+            }
+        }
+    },
+    "python-requests-kerberos": {
+        "CVE-2014-8650": {
+            "debianbug": 768408,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.7.0-2" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "0.5-2"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.5-2" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "0.5-2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.7.0-2" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "0.5-2"
+                }
+            }
+        }
+    },
+    "libid3tag": {
+        "CVE-2008-2109": {
+            "scope": "remote",
+            "debianbug": 480187,
+            "description": "field.c in the libid3tag 0.15.0b library allows context-dependent attackers to cause a denial of service (CPU consumption) via an ID3_FIELD_TYPE_STRINGLIST field that ends in '\\0', which triggers an infinite loop.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.15.1b-11" },
+                    "urgency": "low",
+                    "fixed_version": "0.15.1b-8"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.15.1b-11" },
+                    "urgency": "low",
+                    "fixed_version": "0.15.1b-8"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "0.15.1b-10" },
+                    "urgency": "low",
+                    "fixed_version": "0.15.1b-8"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.15.1b-11" },
+                    "urgency": "low",
+                    "fixed_version": "0.15.1b-8"
+                }
+            }
+        }
+    },
+    "telepathy-gabble": {
+        "CVE-2011-1000": {
+            "scope": "remote",
+            "description": "jingle-factory.c in Telepathy Gabble 0.11 before 0.11.7, 0.10 before 0.10.5, and 0.8 before 0.8.15 allows remote attackers to sniff audio and video calls via a crafted google:jingleinfo stanza that specifies an alternate server for streamed media.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.18.3-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.9.15-2"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.18.3-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.9.15-2"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "0.16.5-1+deb7u1",
+                        "wheezy": "0.16.7-0+deb7u1"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "0.9.15-2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.18.3-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.9.15-2"
+                }
+            }
+        },
+        "CVE-2013-1769": {
+            "scope": "remote",
+            "debianbug": 702252,
+            "description": "A certain hashing algorithm in Telepathy Gabble 0.16.x before 0.16.5 and 0.17.x before 0.17.3 allows remote attackers to cause a denial of service (NULL pointer dereference and crash) via a crafted message.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.18.3-2" },
+                    "urgency": "low",
+                    "fixed_version": "0.16.5-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.18.3-1" },
+                    "urgency": "low",
+                    "fixed_version": "0.16.5-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "0.16.5-1+deb7u1",
+                        "wheezy": "0.16.7-0+deb7u1"
+                    },
+                    "urgency": "low",
+                    "fixed_version": "0.16.5-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.18.3-2" },
+                    "urgency": "low",
+                    "fixed_version": "0.16.5-1"
+                }
+            }
+        },
+        "CVE-2013-1431": {
+            "scope": "remote",
+            "description": "The Wocky module in Telepathy Gabble before 0.16.6 and 0.17.x before 0.17.4, when connecting to a \"legacy Jabber server,\" does not properly enforce the WockyConnector:tls-required flag, which allows remote attackers to bypass TLS verification and perform a man-in-the-middle attacks.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "0.18.3-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.16.6-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.18.3-1" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.16.6-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "0.16.5-1+deb7u1",
+                        "wheezy": "0.16.7-0+deb7u1"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "0.16.5-1+deb7u1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "0.18.3-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.16.6-1"
+                }
+            }
+        }
+    },
+    "macchanger": {
+        "TEMP-0774898-681A65": {
+            "debianbug": 774898,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1.7.0-5.3" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1.7.0-5.3"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1.7.0-5.3" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1.7.0-5.3"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "nodsa": "Minor issue",
+                    "repositories": { "wheezy": "1.5.0-9" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.7.0-5.3" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1.7.0-5.3"
+                }
+            }
+        }
+    },
+    "core-network": {
+        "TEMP-0799756-21B18C": {
+            "debianbug": 799756,
+            "releases": {
+                "sid": {
+                    "status": "open",
+                    "repositories": { "sid": "4.8-1" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        }
+    },
+    "aircrack-ng": {
+        "CVE-2014-8324": {
+            "debianbug": 767979,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                }
+            }
+        },
+        "CVE-2010-1159": {
+            "scope": "remote",
+            "debianbug": 577758,
+            "description": "Multiple heap-based buffer overflows in Aircrack-ng before 1.1 allow remote attackers to cause a denial of service (crash) and execute arbitrary code via a (1) large length value in an EAPOL packet or (2) long EAPOL packet.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1:1.2-0~beta3-4" },
+                    "urgency": "low",
+                    "fixed_version": "1:1.1-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1:1.2-0~beta3-4" },
+                    "urgency": "low",
+                    "fixed_version": "1:1.1-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:1.2-0~beta3-4" },
+                    "urgency": "low",
+                    "fixed_version": "1:1.1-1"
+                }
+            }
+        },
+        "CVE-2014-8321": {
+            "debianbug": 767979,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                }
+            }
+        },
+        "CVE-2014-8323": {
+            "debianbug": 767979,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                }
+            }
+        },
+        "CVE-2014-8322": {
+            "debianbug": 767979,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:1.2-0~beta3-4" },
+                    "urgency": "not yet assigned",
+                    "fixed_version": "1:1.2-0~beta3-2"
+                }
+            }
+        },
+        "CVE-2007-2057": {
+            "scope": "remote",
+            "description": "Stack-based buffer overflow in aircrack-ng airodump-ng 0.7 allows remote attackers to execute arbitrary code via crafted 802.11 authentication packets.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1:1.2-0~beta3-4" },
+                    "urgency": "medium",
+                    "fixed_version": "1:0.7-3"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1:1.2-0~beta3-4" },
+                    "urgency": "medium",
+                    "fixed_version": "1:0.7-3"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:1.2-0~beta3-4" },
+                    "urgency": "medium",
+                    "fixed_version": "1:0.7-3"
+                }
+            }
+        }
+    },
+    "xbuffy": {
+        "CVE-2014-0469": {
+            "scope": "remote",
+            "description": "Stack-based buffer overflow in a certain Debian patch for xbuffy before 3.3.bl.3.dfsg-9 allows remote attackers to execute arbitrary code via the subject of an email, possibly related to indent subject lines.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "3.3.bl.3.dfsg-10" },
+                    "urgency": "medium**",
+                    "fixed_version": "3.3.bl.3.dfsg-9"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "3.3.bl.3.dfsg-10" },
+                    "urgency": "medium**",
+                    "fixed_version": "3.3.bl.3.dfsg-9"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": {
+                        "wheezy-security": "3.3.bl.3.dfsg-8+deb7u1",
+                        "wheezy": "3.3.bl.3.dfsg-8+deb7u1"
+                    },
+                    "urgency": "medium**",
+                    "fixed_version": "3.3.bl.3.dfsg-8+deb7u1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "3.3.bl.3.dfsg-10" },
+                    "urgency": "medium**",
+                    "fixed_version": "3.3.bl.3.dfsg-9"
+                }
+            }
+        }
+    },
+    "z88dk": {
+        "CVE-2015-2305": {
+            "scope": "remote",
+            "debianbug": 778389,
+            "description": "Integer overflow in the regcomp implementation in the Henry Spencer BSD regex library (aka rxspencer) alpha3.8.g5 on 32-bit platforms, as used in NetBSD through 6.1.5 and other products, might allow context-dependent attackers to execute arbitrary code via a large regular expression that leads to a heap-based buffer overflow.",
+            "releases": {
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1.8.ds1-10" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1.8.ds1-10" },
+                    "urgency": "unimportant",
+                    "fixed_version": "0"
+                }
+            }
+        }
+    },
+    "catdoc": {
+        "CVE-2003-0193": {
+            "scope": "local",
+            "description": "msxlsview.sh in xlsview for catdoc 0.91 and earlier allows local users to overwrite arbitrary files via a symlink attack on predictable temporary file names (\"word$$.html\").",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1:0.94.3~git20160113.dbc9ec6+dfsg-1" },
+                    "urgency": "low**",
+                    "fixed_version": "0.91.5-2"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "0.94.4-1.1" },
+                    "urgency": "low**",
+                    "fixed_version": "0.91.5-2"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "0.94.4-1.1" },
+                    "urgency": "low**",
+                    "fixed_version": "0.91.5-2"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:0.94.3~git20160113.dbc9ec6+dfsg-1" },
+                    "urgency": "low**",
+                    "fixed_version": "0.91.5-2"
+                }
+            }
+        }
+    },
+    "libdkim": {
+        "TEMP-0532740-DB1B64": {
+            "debianbug": 532740,
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "1:1.0.21-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "1:1.0.19-4"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "1:1.0.21-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "1:1.0.19-4"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "1:1.0.21-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "1:1.0.19-4"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "1:1.0.21-3" },
+                    "urgency": "unimportant",
+                    "fixed_version": "1:1.0.19-4"
+                }
+            }
+        }
+    },
+    "chef": {
+        "CVE-2010-5142": {
+            "scope": "remote",
+            "description": "chef-server-api/app/controllers/users.rb in the API in Chef before 0.9.0 does not require administrative privileges for the create, destroy, and update methods, which allows remote authenticated users to manage user accounts via requests to the /users URI.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "12.3.0-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.10.10-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "11.12.8-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.10.10-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "10.12.0-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.10.10-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "12.3.0-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.10.10-1"
+                }
+            }
+        },
+        "CVE-2015-8559": {
+            "debianbug": 809670,
+            "releases": {
+                "stretch": {
+                    "status": "open",
+                    "repositories": { "stretch": "12.3.0-3" },
+                    "urgency": "not yet assigned"
+                },
+                "jessie": {
+                    "status": "open",
+                    "nodsa": "Minor issue; workaround using validatorless bootstrapping",
+                    "repositories": { "jessie": "11.12.8-2" },
+                    "urgency": "not yet assigned"
+                },
+                "wheezy": {
+                    "status": "open",
+                    "nodsa": "Minor issue; workaround using validatorless bootstrapping",
+                    "repositories": { "wheezy": "10.12.0-3" },
+                    "urgency": "not yet assigned"
+                },
+                "sid": {
+                    "status": "open",
+                    "repositories": { "sid": "12.3.0-3" },
+                    "urgency": "not yet assigned"
+                }
+            }
+        },
+        "CVE-2011-5098": {
+            "scope": "remote",
+            "description": "chef-server-api/app/controllers/clients.rb in Chef Server in Chef before 0.9.20, and 0.10.x before 0.10.6, does not require administrative privileges for creating admin clients, which allows remote authenticated users to bypass intended access restrictions by leveraging read permission for the validation key and executing a knife client create command with the --admin option.",
+            "releases": {
+                "stretch": {
+                    "status": "resolved",
+                    "repositories": { "stretch": "12.3.0-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.10.10-1"
+                },
+                "jessie": {
+                    "status": "resolved",
+                    "repositories": { "jessie": "11.12.8-2" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.10.10-1"
+                },
+                "wheezy": {
+                    "status": "resolved",
+                    "repositories": { "wheezy": "10.12.0-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.10.10-1"
+                },
+                "sid": {
+                    "status": "resolved",
+                    "repositories": { "sid": "12.3.0-3" },
+                    "urgency": "medium**",
+                    "fixed_version": "0.10.10-1"
+                }
+            }
+        }
+    }
+}

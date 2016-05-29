@@ -38,11 +38,12 @@ namespace vbot.core
                         tx.Put(db, Encoding.UTF8.GetBytes(v.Url), Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(v)));
                     }
                     tx.Commit();
+                    logger.Debug("Committed {0} vulnerabilities to database.", vulnerabilities.Count);
                     return true;
                 }
                 catch (LightningException e)
                 {
-                    logger.Error("Exception thown attmepting to write vulnerabilities to database.");
+                    logger.Error("Exception thrown attempting to write vulnerabilities to database.");
                     logger.Error(e);
                     return false;
                 }
