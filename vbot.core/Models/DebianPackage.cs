@@ -236,5 +236,15 @@ namespace vbot.core
             logger.Info("Parsed {0} packages, {1} CVEs.", packages.Count, packages.Sum(p => p.CVEs.Count));
             return (List<DebianPackage>) packages;
         }
+
+        public static OSSIndexVulnerability MapPackageToVulnerability(DebianPackage p)
+        {
+            return new OSSIndexVulnerability
+            {
+                PackageManager = "dpkg",
+                
+            };
+        }
+
     }
 }

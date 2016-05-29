@@ -14,7 +14,7 @@ namespace vbot.tests
     public class CoreUnitTests
     {
         public FileInfo json_1 = new FileInfo("example.1.json");
-
+        public FileInfo json_2 = new FileInfo("example.1.json");
         [Fact]
         public void CanParseDebianJson()
         {

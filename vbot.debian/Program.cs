@@ -48,11 +48,6 @@ namespace vbot.debian
             Configure();
             if (!Directory.Exists("work")) Directory.CreateDirectory("work");
             FileInfo f = new FileInfo(Path.Combine("work", "635999112121971070"));
-
-            List <DebianPackage> packages = DebianPackage.ParseDebianJsonFile(f);
-            return (int)ProgramExitStatus.Success;
-
-
             int percentage_completed = 0;
             long bytes_received = 0;
             DownloadProgressChangedEventHandler d = delegate (object sender, DownloadProgressChangedEventArgs e)
