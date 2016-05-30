@@ -52,6 +52,7 @@ namespace vbot.core
 
         public static bool GetVulnerability(string url, out OSSIndexVulnerability v)
         {
+            if (!Environment.IsOpened) Environment.Open(EnvironmentOpenFlags.None);
             using (LightningTransaction tx = Environment.BeginTransaction(TransactionBeginFlags.ReadOnly))
             {
                 LightningDatabase db = tx.OpenDatabase();

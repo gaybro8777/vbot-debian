@@ -16,6 +16,7 @@ using System.Security;
 using System.Security.Permissions;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 using NLog;
@@ -81,10 +82,22 @@ namespace vbot.core
            
         }
 
-        public Task<bool> AddDebianPackageVulnerabilities(DebianPackage p)
+        public List<Task<bool>> AddDebianPackageVulnerabilities(DebianPackage p)
         {
-            return null;
+            List<Task<bool>> tasks = new List<Task<bool>>();
+            tasks = p.MapToOSSIndexVulnerabilities().ToList().Select(v => Task<bool>.Factory.StartNew(() => this.AddVulnerability(v),
+                CancellationToken.None, TaskCreationOptions.DenyChildAttach, TaskScheduler.Default)).ToList();
+            return tasks;
         }
-        
+
+        public List<Task<bool>> AddVulnerabilities(List<OSSIndexVulnerability> vulnerabilities)
+        {
+            List<Task<bool>> tasks = new List<Task<bool>>();
+            tasks = vulnerabilities.Select(v => Task<bool>.Factory.StartNew(() => this.AddVulnerability(v),
+                CancellationToken.None, TaskCreationOptions.DenyChildAttach, TaskScheduler.Default)).ToList();
+            return tasks;
+        }
+
+
     }
 }

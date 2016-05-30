@@ -17,10 +17,10 @@ namespace vbot.debian
 
         }
 
-        [Option('u', "user", Required = true, HelpText = "Specifies the user for authenticating with the OSS Index server.")]
-        public string File { get; set; }
+        [Option('u', "user", Required = false, HelpText = "Specifies the user for authenticating with the OSS Index server.")]
+        public string User { get; set; }
 
-        [Option('p', "password", Required = true, HelpText = "Specifies the password for authenticating with the OSS Index server.")]
+        [Option('p', "password", Required = false, HelpText = "Specifies the password for authenticating with the OSS Index server.")]
         public string Password { get; set; }
 
         [Option('d', "debian-key", Required = false, HelpText = "Specifies the public key on the SSL certificate to expect from the Debian security tracker server.")]

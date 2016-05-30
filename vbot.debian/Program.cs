@@ -51,6 +51,14 @@ namespace vbot.debian
                         return (int)ProgramExitStatus.InvalidArguments;
                     }
                 }
+                else
+                {
+                    if (string.IsNullOrEmpty(ProgramOptions.User) || (string.IsNullOrEmpty(ProgramOptions.Password)))
+                    {
+                        logger.Info("The user and password options must be specified.");
+                        return (int)ProgramExitStatus.InvalidArguments;
+                    }
+                }
             }
             Config = core.Configuration.ReadConfiguration();
             if (Config == null)
@@ -121,6 +129,28 @@ namespace vbot.debian
             }
             List<DebianPackage> packages = DebianPackage.ParseDebianJsonFile(f);
             List<OSSIndexVulnerability> vulnerabilities = packages.SelectMany(p => p.MapToOSSIndexVulnerabilities()).ToList();
+            logger.Info("{0} total vulnerabilities extracted.", vulnerabilities.Count);
+            List<OSSIndexVulnerability> cached_vulnerabilities = new List<OSSIndexVulnerability>();
+            foreach(OSSIndexVulnerability v in vulnerabilities)
+            {
+                OSSIndexVulnerability cached_v = null;
+                if (Database.GetVulnerability(v.Url, out cached_v))
+                {
+                    if (v.EqualValues(cached_v))
+                    {
+                        cached_vulnerabilities.Add(v);
+                        vulnerabilities.Remove(v);
+                    }
+                }
+            }
+            logger.Info("{0} vulnerabilities are cached and have already been submitted to the OSS Index server.", cached_vulnerabilities.Count);
+            OSSIndexHttpClient client = new OSSIndexHttpClient("1.1e", ProgramOptions.User, ProgramOptions.Password);
+           // foreach (OSSIndexVulnerability v in vulnerabilities)
+            //{
+              //  client.AddDebianPackageVulnerabilities(v);
+            //}
+
+                
             return (int)ProgramExitStatus.Success;
         }
 

@@ -31,7 +31,7 @@ namespace vbot.core
             public string Scope { get; set; }
 
             [JsonProperty("debianbug")]
-            public int DebianBug { get; set; }
+            public int DebianBug { get; set; } = 0;
 
             [JsonProperty("description")]
             public string Description { get; set; }
@@ -252,16 +252,16 @@ namespace vbot.core
                         Name = this.Name,
                         Url = cve.DebianBug == 0 ?
                             string.Format("https://bugs.debian.org/cgi-bin/bugreport.cgi?bug={0}#{1}", cve.DebianBug, release.Name) :
-                            string.Format("https://ossindex.net/dpkg/{0}/{1}/{2}", release.Name, this.Name, release.Name),
+                            string.Format("https://ossindex.net/dpkg/{0}/{1}/{2}", release.Name, this.Name, cve.Name),
                         Group = release.Name,
                         Description = cve.Description,
                         Version = release.FixedVersion,
                         CVEs = new string[] {cve.Name},
+                        Vid = cve.DebianBug != 0 ? cve.DebianBug.ToString() : ""
                     });
                 }
             }
             return v;
         }
-
     }
 }
