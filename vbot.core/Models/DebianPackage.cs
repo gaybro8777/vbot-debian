@@ -250,14 +250,14 @@ namespace vbot.core
                         Action = "add+approve",
                         PackageManager = "dpkg",
                         Name = this.Name,
-                        Url = cve.DebianBug == 0 ?
+                        Url = cve.DebianBug != 0 ?
                             string.Format("https://bugs.debian.org/cgi-bin/bugreport.cgi?bug={0}#{1}", cve.DebianBug, release.Name) :
                             string.Format("https://ossindex.net/dpkg/{0}/{1}/{2}", release.Name, this.Name, cve.Name),
                         Group = release.Name,
                         Description = cve.Description,
-                        Version = release.FixedVersion,
+                        Version = "<" + release.FixedVersion,
                         CVEs = new string[] {cve.Name},
-                        Vid = cve.DebianBug != 0 ? cve.DebianBug.ToString() : string.Format("https://ossindex.net/dpkg/{0}/{1}/{2}", release.Name, this.Name, cve.Name)
+                        Vid = cve.DebianBug != 0 ? cve.DebianBug.ToString() : ""
                     });
                 }
             }

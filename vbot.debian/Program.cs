@@ -131,7 +131,7 @@ namespace vbot.debian
             foreach(OSSIndexVulnerability v in vulnerabilities)
             {
                 OSSIndexVulnerability cached_v = null;
-                if (Database.GetVulnerability(v.Url, out cached_v))
+                if (Database.GetVulnerability(string.IsNullOrEmpty(v.Vid) ? v.Url : v.Vid, out cached_v))
                 {
                     if (v.EqualValues(cached_v))
                     {
@@ -139,7 +139,7 @@ namespace vbot.debian
                     }
                 }
             }
-            vulnerabilities.RemoveAll(v => cached_vulnerabilities.Contains(v));
+            vulnerabilities = vulnerabilities.Except(cached_vulnerabilities).ToList();
             logger.Info("{0} vulnerabilities are cached and have already been submitted to the OSS Index server.", cached_vulnerabilities.Count);
             OSSIndexHttpClient client = new OSSIndexHttpClient("1.1e", ProgramOptions.User, ProgramOptions.Password);
             if (!string.IsNullOrEmpty(ProgramOptions.PackageName))

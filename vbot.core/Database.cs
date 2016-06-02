@@ -35,7 +35,7 @@ namespace vbot.core
                             serializer.Serialize(writer, v);
                         }
                         */
-                        tx.Put(db, Encoding.UTF8.GetBytes(v.Url), Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(v)));
+                        tx.Put(db, Encoding.UTF8.GetBytes(string.IsNullOrEmpty(v.Vid) ? v.Url : v.Vid), Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(v)));
                     }
                     tx.Commit();
                     logger.Debug("Committed {0} vulnerabilities to database.", vulnerabilities.Count);
@@ -50,14 +50,14 @@ namespace vbot.core
             }
         }
 
-        public static bool GetVulnerability(string url, out OSSIndexVulnerability v)
+        public static bool GetVulnerability(string id, out OSSIndexVulnerability v)
         {
             if (!Environment.IsOpened) Environment.Open(EnvironmentOpenFlags.None);
             using (LightningTransaction tx = Environment.BeginTransaction(TransactionBeginFlags.ReadOnly))
             {
                 LightningDatabase db = tx.OpenDatabase();
                 byte[] ret = null;
-                if (!tx.TryGet(db, Encoding.UTF8.GetBytes(url), out ret))
+                if (!tx.TryGet(db, Encoding.UTF8.GetBytes(id), out ret))
                 {
                     v = null;
                     return false;
