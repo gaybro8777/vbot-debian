@@ -139,7 +139,7 @@ namespace vbot.debian
                     }
                 }
             }
-            vulnerabilities.RemoveAll(v => cached_vulnerabilities.All(cv => v == cv));
+            vulnerabilities.RemoveAll(v => cached_vulnerabilities.Contains(v));
             logger.Info("{0} vulnerabilities are cached and have already been submitted to the OSS Index server.", cached_vulnerabilities.Count);
             OSSIndexHttpClient client = new OSSIndexHttpClient("1.1e", ProgramOptions.User, ProgramOptions.Password);
             if (!string.IsNullOrEmpty(ProgramOptions.PackageName))
