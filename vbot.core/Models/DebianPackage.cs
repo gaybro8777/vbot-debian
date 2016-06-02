@@ -257,7 +257,7 @@ namespace vbot.core
                         Description = cve.Description,
                         Version = release.FixedVersion,
                         CVEs = new string[] {cve.Name},
-                        Vid = cve.DebianBug != 0 ? cve.DebianBug.ToString() : ""
+                        Vid = cve.DebianBug != 0 ? cve.DebianBug.ToString() : string.Format("https://ossindex.net/dpkg/{0}/{1}/{2}", release.Name, this.Name, cve.Name)
                     });
                 }
             }

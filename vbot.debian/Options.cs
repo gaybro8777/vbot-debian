@@ -29,6 +29,9 @@ namespace vbot.debian
         [Option('f', "local-file", Required = false, HelpText = "Specifies a local file containing the Debian security tracker JSON dump.")]
         public string LocalFile { get; set; }
 
+        [Option('n', "package-name", Required = false, HelpText = "Specifies a particular package to view and send to the OSS Index server.")]
+        public string PackageName { get; set; }
+
         [ParserState]
         public IParserState LastParserState { get; set; }
 

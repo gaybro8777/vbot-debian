@@ -30,11 +30,11 @@ namespace vbot.tests
         [Fact]
         public void CanAddVulnerabilityToOSSIndex()
         {
-            List<DebianPackage> packages = DebianPackage.ParseDebianJsonFile(json_1);
+            List<DebianPackage> packages = DebianPackage.ParseDebianJsonFile(json_2);
             List<OSSIndexVulnerability> vulns = packages.First().MapToOSSIndexVulnerabilities();
             vulns.ForEach(v => v.Url += "vbot_unit_test" + v.Url + "_" + DateTime.UtcNow.Ticks.ToString());
             OSSIndexHttpClient c = new OSSIndexHttpClient("1.1e", "debian@vorsecurity.com", "d8gh#beharry");
-            Assert.True(c.AddVulnerability(packages.First().MapToOSSIndexVulnerabilities().First()));
+            Assert.True(c.AddVulnerability(packages.Where(p => p.Name == "rsyslog").First().MapToOSSIndexVulnerabilities().First()));
         }
 
         [Fact]
@@ -42,7 +42,14 @@ namespace vbot.tests
         {
             List<DebianPackage> packages = DebianPackage.ParseDebianJsonFile(json_1);
             OSSIndexHttpClient c = new OSSIndexHttpClient("1.1e", "debian@vorsecurity.com", "d8gh#beharry");
-           // c.AddVulnerabilities(packages.First().MapToOSSIndexVulnerabilities());
+            List<Tuple<OSSIndexVulnerability, Task<bool>>> tasks = c.AddVulnerabilities(packages.First().MapToOSSIndexVulnerabilities());
+            
+            while (tasks.Count > 0)
+            {
+                Task.WaitAny(tasks.Select(t => t.Item2).ToArray());
+                List<Tuple<OSSIndexVulnerability, Task<bool>>> completed = tasks.Where(t => t.Item2.IsCompleted).ToList();
+                tasks.RemoveAll(t => t.Item2.IsCompleted || t.Item2.IsFaulted || t.Item2.IsCanceled);
+            }
         }
 
         [Fact]

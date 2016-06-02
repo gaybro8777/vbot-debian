@@ -51,13 +51,10 @@ namespace vbot.debian
                         return (int)ProgramExitStatus.InvalidArguments;
                     }
                 }
-                else
+                if (string.IsNullOrEmpty(ProgramOptions.User) || (string.IsNullOrEmpty(ProgramOptions.Password)))
                 {
-                    if (string.IsNullOrEmpty(ProgramOptions.User) || (string.IsNullOrEmpty(ProgramOptions.Password)))
-                    {
-                        logger.Info("The user and password options must be specified.");
-                        return (int)ProgramExitStatus.InvalidArguments;
-                    }
+                    logger.Info("The user and password options must be specified.");
+                    return (int)ProgramExitStatus.InvalidArguments;
                 }
             }
             Config = core.Configuration.ReadConfiguration();
@@ -139,18 +136,37 @@ namespace vbot.debian
                     if (v.EqualValues(cached_v))
                     {
                         cached_vulnerabilities.Add(v);
-                        vulnerabilities.Remove(v);
                     }
                 }
             }
+            vulnerabilities.RemoveAll(v => cached_vulnerabilities.All(cv => v == cv));
             logger.Info("{0} vulnerabilities are cached and have already been submitted to the OSS Index server.", cached_vulnerabilities.Count);
             OSSIndexHttpClient client = new OSSIndexHttpClient("1.1e", ProgramOptions.User, ProgramOptions.Password);
-           // foreach (OSSIndexVulnerability v in vulnerabilities)
-            //{
-              //  client.AddDebianPackageVulnerabilities(v);
-            //}
+            if (!string.IsNullOrEmpty(ProgramOptions.PackageName))
+            {
+                vulnerabilities = vulnerabilities.Where(v => v.Name == ProgramOptions.PackageName).ToList();
+                logger.Info("Found {0} new or updated vulnerabilities for package {1}.", vulnerabilities.Count, ProgramOptions.PackageName);
+            }
+            OSSIndexHttpClient c = new OSSIndexHttpClient("1.1e", ProgramOptions.User, ProgramOptions.Password);
+            int i = 0;
+            IEnumerable<IGrouping<int, OSSIndexVulnerability>> packages_vulnerabilities = vulnerabilities.GroupBy(x => i++ / 10).ToList();
+            for (int g = 0; g < packages_vulnerabilities.Count(); g++)
+            {
+                List<Tuple<OSSIndexVulnerability, Task<bool>>> tasks = c.AddVulnerabilities(packages_vulnerabilities.Where(pv => pv.Key == g).SelectMany(s => s).ToList());
+                while (tasks.Count > 0)
+                {
+                    Task.WaitAny(tasks.Select(t => t.Item2).ToArray());
+                    List<Tuple<OSSIndexVulnerability, Task<bool>>> completed = tasks.Where(t => t.Item2.IsCompleted).ToList();
+                    List<Tuple<OSSIndexVulnerability, Task<bool>>> faulted = tasks.Where(t => t.Item2.IsFaulted).ToList();
+                    List<Tuple<OSSIndexVulnerability, Task<bool>>> cancelled = tasks.Where(t => t.Item2.IsCanceled).ToList();
+                    Database.PutVulnerabilities(completed.Select(cv => cv.Item1).ToList());
+                    completed.ForEach(cv => logger.Info("Added vulnerability with id {0} for package {1} to OSS Index and local database cache.", cv.Item1.Vid, cv.Item1.Name));
+                    cancelled.ForEach(cv => logger.Info("The task to add vulnerability with id {0} for package {1} to OSS Index and local database cache.", cv.Item1.Vid, cv.Item1.Name));
+                    faulted.ForEach(cv => logger.Info("The task to add vulnerability with id {0} for package {1} to OSS Index and local database cache.", cv.Item1.Vid, cv.Item1.Name));
+                    tasks.RemoveAll(t => completed.Contains(t) || cancelled.Contains(t) || faulted.Contains(t));
+                }
+            }
 
-                
             return (int)ProgramExitStatus.Success;
         }
 
@@ -164,6 +180,35 @@ namespace vbot.debian
             else
             {
                 if (Config.ContainsKey("LastHash")) Program.LastHash = (string)Config["LastHash"];
+            }
+        }
+
+        public async static void AddVulnerabilitiesAsync(List<OSSIndexVulnerability> vulnerabilities)
+        {
+            int i = 0;
+            IEnumerable<IGrouping<int, OSSIndexVulnerability>> packages_vulnerabilities = vulnerabilities.GroupBy(x => i++ / 10).ToList();
+            OSSIndexHttpClient c = new OSSIndexHttpClient("1.1e", ProgramOptions.User, ProgramOptions.Password);
+            for (int g = 0; g < packages_vulnerabilities.Count(); g++)
+            {
+                IEnumerable<OSSIndexVulnerability> task_vulnerabilities = packages_vulnerabilities.Where(pv => pv.Key == g).SelectMany(s => s); 
+                {
+                    List<Tuple<OSSIndexVulnerability, Task<bool>>> tasks = task_vulnerabilities.Select(tv =>
+                    new Tuple<OSSIndexVulnerability, Task<bool>>(tv,
+                        Task<bool>.Run(async () => await c.AddVulnerabilityAsync(tv)))).ToList();
+                    while (tasks.Count > 0)
+                    {
+                        Task<bool> completed_task = await Task.WhenAny(tasks.Select(t => t.Item2).ToArray());
+                        bool r = await completed_task;
+                        List<Tuple<OSSIndexVulnerability, Task<bool>>> completed = tasks.Where(t => t.Item2.IsCompleted).ToList();
+                        List<Tuple<OSSIndexVulnerability, Task<bool>>> faulted = tasks.Where(t => t.Item2.IsFaulted).ToList();
+                        List<Tuple<OSSIndexVulnerability, Task<bool>>> cancelled = tasks.Where(t => t.Item2.IsCanceled).ToList();
+                        Database.PutVulnerabilities(completed.Select(cv => cv.Item1).ToList());
+                        completed.ForEach(cv => logger.Info("Added vulnerability with id {0} for package {1} to OSS Index and local database cache.", cv.Item2.Id, cv.Item1.Name));
+                        cancelled.ForEach(cv => logger.Info("The task to add vulnerability with id {0} to OSS Index did not complete successfully.", cv.Item2.Id));
+                        faulted.ForEach(cv => logger.Info("The task to add vulnerability with id {0} to OSS Index did not complete successfully.", cv.Item2.Id));
+                        tasks.RemoveAll(t => t.Item2.IsCompleted || t.Item2.IsFaulted || t.Item2.IsCanceled);
+                    }
+                }
             }
         }
         #endregion
