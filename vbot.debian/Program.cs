@@ -51,7 +51,7 @@ namespace vbot.debian
                         return (int)ProgramExitStatus.InvalidArguments;
                     }
                 }
-                if (string.IsNullOrEmpty(ProgramOptions.User) || (string.IsNullOrEmpty(ProgramOptions.Password)))
+                if ((!ProgramOptions.DumpDatabase) && ((string.IsNullOrEmpty(ProgramOptions.User) || (string.IsNullOrEmpty(ProgramOptions.Password)))))
                 {
                     logger.Info("The user and password options must be specified.");
                     return (int)ProgramExitStatus.InvalidArguments;
@@ -69,6 +69,11 @@ namespace vbot.debian
                 core.Configuration.WriteConfiguration(Config);
             }
             Configure();
+            if (ProgramOptions.DumpDatabase)
+            {
+                Database.PrintAllVulnerabilities();
+                return (int)ProgramExitStatus.Success;
+            }
             FileInfo f = null;
             if (string.IsNullOrEmpty(ProgramOptions.LocalFile))
             {

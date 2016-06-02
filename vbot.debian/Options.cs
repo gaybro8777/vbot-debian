@@ -32,6 +32,9 @@ namespace vbot.debian
         [Option('n', "package-name", Required = false, HelpText = "Specifies a particular package to view and send to the OSS Index server.")]
         public string PackageName { get; set; }
 
+        [Option('m', "dump-db", Required = false, HelpText = "Specifies a particular package to view and send to the OSS Index server.")]
+        public bool DumpDatabase { get; set; }
+
         [ParserState]
         public IParserState LastParserState { get; set; }
 

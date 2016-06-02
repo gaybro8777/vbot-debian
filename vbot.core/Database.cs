@@ -69,6 +69,24 @@ namespace vbot.core
                 }
             }
         }
-   
+
+        public static void PrintAllVulnerabilities()
+        {
+            if (!Environment.IsOpened) Environment.Open(EnvironmentOpenFlags.None);
+            using (LightningTransaction tx = Environment.BeginTransaction(TransactionBeginFlags.ReadOnly))
+            {
+                LightningDatabase db = tx.OpenDatabase();
+                using (LightningCursor cursor = tx.CreateCursor(db))
+                {
+                    foreach (KeyValuePair<byte[], byte[]> r in cursor)
+                    {
+                        string id = Encoding.UTF8.GetString(r.Key);
+                        OSSIndexVulnerability v = JsonConvert.DeserializeObject<OSSIndexVulnerability>(Encoding.UTF8.GetString(r.Value));
+                        logger.Info("Id: {0}), Package: {1}, CVEs: {2}", id, v.Name, string.Join(" ", v.CVEs));
+                    }
+                }
+            }
+
+        }
     }
 }
