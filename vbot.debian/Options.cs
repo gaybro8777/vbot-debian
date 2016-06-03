@@ -32,7 +32,10 @@ namespace vbot.debian
         [Option('n', "package-name", Required = false, HelpText = "Specifies a particular package to view and send to the OSS Index server.")]
         public string PackageName { get; set; }
 
-        [Option('m', "dump-db", Required = false, HelpText = "Specifies a particular package to view and send to the OSS Index server.")]
+        [Option('e', "extract-print", Required = false, HelpText = "Extract and print vulnearbilities only, do not send to the OSS Index server.")]
+        public bool ExtractPrint { get; set; }
+
+        [Option('m', "dump-db", Required = false, HelpText = "Dump all the vulnerabilities currently cached in the local db.")]
         public bool DumpDatabase { get; set; }
 
         [ParserState]

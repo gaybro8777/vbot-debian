@@ -35,7 +35,7 @@ namespace vbot.core
                             serializer.Serialize(writer, v);
                         }
                         */
-                        tx.Put(db, Encoding.UTF8.GetBytes(string.IsNullOrEmpty(v.Vid) ? v.Url : v.Vid), Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(v)));
+                        tx.Put(db, Encoding.UTF8.GetBytes(string.IsNullOrEmpty(v.Vid) ? v.Url : v.Vid + "#" + v.Group), Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(v)));
                     }
                     tx.Commit();
                     logger.Debug("Committed {0} vulnerabilities to database.", vulnerabilities.Count);
