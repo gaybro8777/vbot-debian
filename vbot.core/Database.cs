@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,11 +15,14 @@ namespace vbot.core
     public class Database
     {
         private static Logger logger = LogManager.GetCurrentClassLogger();
-        public static LightningEnvironment Environment = new LightningEnvironment("db", new EnvironmentConfiguration() { MapSize = 2L * 1024L * 1024L * 1024L });
+        public static LightningEnvironment Environment = new LightningEnvironment("db");
 
         public static bool PutVulnerabilities(List<OSSIndexVulnerability> vulnerabilities)
         {
-            if (!Environment.IsOpened) Environment.Open(EnvironmentOpenFlags.None);
+            if (!Environment.IsOpened) {
+				Environment.MapSize = 2L * 1024L * 1024L * 1024L;
+				Environment.Open(EnvironmentOpenFlags.None);
+			}
             using (LightningTransaction tx = Environment.BeginTransaction())
             using (LightningDatabase db = tx.OpenDatabase(null, new DatabaseConfiguration { Flags = DatabaseOpenFlags.Create }))
             {
@@ -52,7 +55,10 @@ namespace vbot.core
 
         public static bool GetVulnerability(string id, out OSSIndexVulnerability v)
         {
-            if (!Environment.IsOpened) Environment.Open(EnvironmentOpenFlags.None);
+            if (!Environment.IsOpened) {
+				Environment.MapSize = 2L * 1024L * 1024L * 1024L;
+				Environment.Open(EnvironmentOpenFlags.None);
+			}
             using (LightningTransaction tx = Environment.BeginTransaction(TransactionBeginFlags.ReadOnly))
             {
                 LightningDatabase db = tx.OpenDatabase();
@@ -72,7 +78,10 @@ namespace vbot.core
 
         public static void PrintAllVulnerabilities()
         {
-            if (!Environment.IsOpened) Environment.Open(EnvironmentOpenFlags.None);
+            if (!Environment.IsOpened) {
+				Environment.MapSize = 2L * 1024L * 1024L * 1024L;
+				Environment.Open(EnvironmentOpenFlags.None);
+			}
             using (LightningTransaction tx = Environment.BeginTransaction(TransactionBeginFlags.ReadOnly))
             {
                 LightningDatabase db = tx.OpenDatabase();
