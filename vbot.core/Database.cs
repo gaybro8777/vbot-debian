@@ -15,7 +15,7 @@ namespace vbot.core
     public class Database
     {
         private static Logger logger = LogManager.GetCurrentClassLogger();
-        public static LightningEnvironment Environment = new LightningEnvironment("db");
+        public static LightningEnvironment Environment = new LightningEnvironment("db", new EnvironmentConfiguration() { MapSize = 2L * 1024L * 1024L * 1024L });
 
         public static bool PutVulnerabilities(List<OSSIndexVulnerability> vulnerabilities)
         {
